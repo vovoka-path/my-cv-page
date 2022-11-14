@@ -25,18 +25,22 @@
 - ##### Create components
 - [ ] Create component Hero
 - [ ] Create component Skill
-- [ ] Create component SkillSet
+- [ ] Create component SkillList
 - [ ] Create component About
 - [ ] Create component Project
-- [ ] Create component ProjectSet
+- [ ] Create component ProjectList
 - [ ] Create component Experience
-- [ ] Create component ExperienceSet
+- [ ] Create component ExperienceList
 - [ ] Create component Education
-- [ ] Create component EducationSet
+- [ ] Create component EducationList
 - [ ] Create component Language
-- [ ] Create component LanguageSet
-- [ ] 
-- [ ] 
-- [ ] 
+- [ ] Create component LanguageList
+### CV page
+- ##### Create components
+- [ ] Create component CVItem
+### Contacts page
+- ##### Create components
+- [ ] Create component Contact
+
 
 
