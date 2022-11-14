@@ -1,0 +1,18 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Person",
+  "name": "Vladimir Polansky",
+  "url": "https://technicalseo.com/tools/schema-markup-generator/",
+  "image": "https://technicalseo.com/tools/schema-markup-generator/",
+  "sameAs": [
+    "https://twitter.com/HocWmVhqQoDVK9m",
+    "https://www.linkedin.com/in/areawed/",
+    "https://github.com/vovoka-path"
+  ],
+  "jobTitle": "Frontend Developer",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "freelance"
+  },
+  "knowsLanguage": ["en-US", "ru"]
+}

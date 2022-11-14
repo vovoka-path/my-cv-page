@@ -1,4 +1,7 @@
 node_modules/
+/.git
+/.vscode
 .cache/
 public
 src/gatsby-types.d.ts
+.env.*
