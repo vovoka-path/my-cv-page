@@ -1,17 +1,18 @@
 import * as React from 'react';
 import { PageProps } from 'gatsby';
-import { SEO } from '../components/seo';
-import Header from '../components/header';
+import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 import { useSiteMetadata } from '../hooks/use-site-metadata';
+// import VovokaIcon from '../images/VovokaIcon';
 
 const IndexPage: React.FC<PageProps> = () => {
   const { author } = useSiteMetadata();
 
   return (
-    <main>
-      <Header />
+    <Layout>
       <h2>My name is {author}</h2>
-    </main>
+      {/* <VovokaIcon /> */}
+    </Layout>
   );
 };
 

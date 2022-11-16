@@ -1,6 +1,6 @@
 import React from 'react';
-import { useSiteMetadata } from '../hooks/use-site-metadata';
-import schema from '../data/JSON-LD-Schema.json';
+import { useSiteMetadata } from '../../hooks/use-site-metadata';
+import schema from '../../data/JSON-LD-Schema.json';
 
 type SeoProps = {
   title?: string;
@@ -10,7 +10,7 @@ type SeoProps = {
   children?: React.ReactNode;
 };
 
-export const SEO: React.FC<SeoProps> = ({ title, description, pathname, children }) => {
+const SEO: React.FC<SeoProps> = ({ title, description, pathname, children }) => {
   const {
     title: defaultTitle,
     description: defaultDescription,
@@ -31,8 +31,8 @@ export const SEO: React.FC<SeoProps> = ({ title, description, pathname, children
 
   return (
     <>
-      <meta httpEquiv="content-language" content="en-us" />
       <title>{seo.title}</title>
+      <meta httpEquiv="content-language" content="en-us" />
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
       <meta name="author" content={seo.author} />
@@ -51,12 +51,10 @@ export const SEO: React.FC<SeoProps> = ({ title, description, pathname, children
       <meta name="twitter:image" content={seo.image} />
       <meta name="twitter:creator" content={seo.twitterUsername} />
       <meta name="twitter:site" content={seo.twitterUsername} />
-      <link
-        rel="icon"
-        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>👤</text></svg>"
-      />
       <script type="application/ld+json">{JSON.stringify(schema)}</script>
       {children}
     </>
   );
 };
+
+export default SEO;
