@@ -12,8 +12,13 @@
 - [x] Set .prettierrc.json
 - [x] Set .eslintrc.js
 - [x] Set tsconfig.json
-- [x] Create SEO
+- [x] Create hook useSiteMetadata
+- [x] Create component SEO
+- [x] Create component Logo
 - [x] Update app initial structure
+- [x] Install gatsby-transformer-json: `npm install gatsby-transformer-json`
+- [x] Set gatsby-source-filesystem in gatsby config: `path: './src/data/',`
+- [ ] ? Install Typography.js https://kyleamathews.github.io/typography.js/ https://sashko.dev/typography-js/
 - ##### Set MaterialUI
 - [ ] Add MaterialUI
 
@@ -23,6 +28,7 @@
 - ##### Create Footer
 - [ ] Create Footer
 - ##### Create components
+- [ ] Create component Layout
 - [ ] Create component Hero
 - [ ] Create component Skill
 - [ ] Create component SkillList
