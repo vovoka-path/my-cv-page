@@ -1,14 +1,14 @@
 [
   {
-    "title": "Home",
-    "path": "/"
+    "name": "Home",
+    "link": "/"
   },
   {
-    "title": "CV",
-    "path": "/cv"
+    "name": "CV",
+    "link": "/cv"
   },
   {
-    "title": "Contacts",
-    "path": "/contacts"
+    "name": "Contacts",
+    "link": "/contacts"
   }
 ]
