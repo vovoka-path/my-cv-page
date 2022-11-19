@@ -26,7 +26,7 @@ const SEO: React.FC<SeoProps> = ({ title, description, pathname, children }) => 
     author: author,
     url: `${siteUrl}${pathname || ``}`,
     image: `${siteUrl}${image}`,
-    twitterUsername: social.twitter,
+    twitterUsername: social.find((item) => item.name === 'twitter')?.link.split('/')[3],
   };
 
   return (
