@@ -64,6 +64,7 @@ const config: GatsbyConfig = {
       },
     },
     `gatsby-plugin-material-ui`,
+    `gatsby-plugin-fix-fouc`,
   ],
 };
 
