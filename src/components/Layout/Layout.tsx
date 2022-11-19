@@ -1,15 +1,15 @@
 import React from 'react';
 
 import { StyledEngineProvider } from '@mui/material/styles';
-import Box from '@mui/material/Box';
+import CssBaseline from '@mui/material/CssBaseline';
 import Fab from '@mui/material/Fab';
-import Container from '@mui/material/Container';
 import ArrowUpwardRoundedIcon from '@mui/icons-material/ArrowUpwardRounded';
 
 import { TO_TOP_ANCHOR } from '../../data/constants';
 import Header from '../Header';
 import Footer from '../Footer';
 import ScrollTop from '../ScrollTop';
+import ExampleText from '../ExampleText';
 
 type LayoutProps = {
   location?: Location;
@@ -20,8 +20,10 @@ type LayoutProps = {
 
 const Layout: React.FC<LayoutProps> = (props) => {
   const { window, children } = props;
+
   return (
     <StyledEngineProvider injectFirst>
+      <CssBaseline />
       <Header />
       <main id={TO_TOP_ANCHOR}>{children}</main>
       <ExampleText />
@@ -36,20 +38,3 @@ const Layout: React.FC<LayoutProps> = (props) => {
 };
 
 export default Layout;
-
-function ExampleText() {
-  return (
-    <Container>
-      <Box sx={{ my: 2 }}>
-        {[...new Array(42)]
-          .map(
-            () => `Cras mattis consectetur purus sit amet fermentum.
-      Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-      Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-      Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`
-          )
-          .join('\n')}
-      </Box>
-    </Container>
-  );
-}
