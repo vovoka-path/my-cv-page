@@ -1,17 +1,17 @@
 import React from 'react';
 import { useSiteMetadata } from '../../hooks/use-site-metadata';
-import Logo from '../Logo';
 import * as s from './footer.module.css';
+
+import Copyright from '../Copyright';
+import Logo from '../Logo';
 
 const Footer: React.FC = () => {
   const { author, authorLink } = useSiteMetadata();
 
   return (
     <footer>
-      © {new Date().getFullYear()}, Built with
-      {` `}
-      <a href={authorLink}>{author}</a>
       <Logo size="16px" />
+      <Copyright author={author} authorLink={authorLink} />
     </footer>
   );
 };
