@@ -1,72 +1,55 @@
 import React from 'react';
 
+import { StyledEngineProvider } from '@mui/material/styles';
+import Box from '@mui/material/Box';
+import Fab from '@mui/material/Fab';
+import Container from '@mui/material/Container';
+import ArrowUpwardRoundedIcon from '@mui/icons-material/ArrowUpwardRounded';
+
+import { TO_TOP_ANCHOR } from '../../data/constants';
 import Header from '../Header';
 import Footer from '../Footer';
+import ScrollTop from '../ScrollTop';
 
-interface LayoutProps {
+type LayoutProps = {
   location?: Location;
   title?: string;
+  window?: () => Window;
   children?: React.ReactNode;
-}
+};
 
-const Layout: React.FC<LayoutProps> = ({ location, title, children }) => {
+const Layout: React.FC<LayoutProps> = (props) => {
+  const { window, children } = props;
   return (
-    <>
+    <StyledEngineProvider injectFirst>
       <Header />
-      <main>{children}</main>
+      <main id={TO_TOP_ANCHOR}>{children}</main>
+      <ExampleText />
+      <ScrollTop {...{ window, children }}>
+        <Fab size="small" aria-label="scroll back to top">
+          <ArrowUpwardRoundedIcon />
+        </Fab>
+      </ScrollTop>
       <Footer />
-    </>
+    </StyledEngineProvider>
   );
 };
 
 export default Layout;
 
-// const rootPath = `${__PATH_PREFIX__}/`;
-// let header;
-// title = 'This title';
-
-// console.log('rootPath =', rootPath);
-// console.log('location.pathname =', document.location.pathname);
-
-// if (document.location.pathname === rootPath) {
-//   header = (
-//     <h1
-//       style={{
-//         // ...scale(1.5),
-//         // marginBottom: rhythm(1.5),
-//         marginTop: 0,
-//       }}
-//     >
-//       <Link
-//         style={{
-//           boxShadow: `none`,
-//           textDecoration: `none`,
-//           color: `inherit`,
-//         }}
-//         to={`/`}
-//       >
-//         !!!{title}
-//       </Link>
-//     </h1>
-//   );
-// } else {
-//   header = (
-//     <h3
-//       style={{
-//         fontFamily: `Montserrat, sans-serif`,
-//         marginTop: 0,
-//       }}
-//     >
-//       <Link
-//         style={{
-//           boxShadow: `none`,
-//           textDecoration: `none`,
-//           color: `inherit`,
-//         }}
-//         to={`/`}
-//       >
-//         {title}
-//       </Link>
-//     </h3>
-//   );
-// }
+function ExampleText() {
+  return (
+    <Container>
+      <Box sx={{ my: 2 }}>
+        {[...new Array(42)]
+          .map(
+            () => `Cras mattis consectetur purus sit amet fermentum.
+      Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+      Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+      Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`
+          )
+          .join('\n')}
+      </Box>
+    </Container>
+  );
+}
