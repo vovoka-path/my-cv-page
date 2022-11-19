@@ -13,12 +13,14 @@ const config: GatsbyConfig = {
     description: `I'm frontend developer. Open to work!`,
     siteUrl: `http://localhost:8000`,
     image: `/images/icon/android-chrome-256x256.png`,
-    social: {
-      twitter: `@vovoka-path`,
-      linkedin: `@areawed`,
-      github: `https://github.com/vovoka-path`,
-      telegram: `@vovoka`,
-    },
+    social: [
+      { name: `Linkedin`, link: `https://www.linkedin.com/in/areawed/` },
+      { name: `Github`, link: `https://github.com/vovoka-path` },
+      { name: `Telegram`, link: `https://t.me/vovoka` },
+      { name: `Discord`, link: `https://discordapp.com/users/919948615399665675/` },
+      { name: `Twitter`, link: `https://twitter.com/HocWmVhqQoDVK9m` },
+      { name: `Email`, link: `mailto:vovoka.path@gmail.com` },
+    ],
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
@@ -61,6 +63,7 @@ const config: GatsbyConfig = {
         lang: 'en',
       },
     },
+    `gatsby-plugin-material-ui`,
   ],
 };
 

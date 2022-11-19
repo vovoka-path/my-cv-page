@@ -1,10 +1,8 @@
 import { graphql, useStaticQuery } from 'gatsby';
 
 type Social = {
-  twitter: string;
-  linkedin: string;
-  github: string;
-  telegram: string;
+  name: string;
+  link: string;
 };
 
 type SiteMetadataProps = {
@@ -14,7 +12,7 @@ type SiteMetadataProps = {
   authorLink: string;
   siteUrl: string;
   image: string;
-  social: Social;
+  social: Social[];
 };
 
 export const useSiteMetadata = (): SiteMetadataProps => {
@@ -30,10 +28,8 @@ export const useSiteMetadata = (): SiteMetadataProps => {
             siteUrl
             image
             social {
-              twitter
-              linkedin
-              github
-              telegram
+              name
+              link
             }
           }
         }
