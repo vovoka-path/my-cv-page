@@ -1,22 +1,34 @@
 import React from 'react';
-import { useSiteMetadata } from '../../hooks/use-site-metadata';
-import * as s from './header.module.css';
 
-import Logo from '../Logo';
-import Nav from '../Nav';
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import Container from '@mui/material/Container';
 
-console.log('s.header', s.header);
+import SiteTitle from '../SiteTitle';
+import NavMenu from '../NavMenu';
+import AvatarMenu from '../AvatarMenu';
 
 const Header: React.FC = () => {
-  const { title } = useSiteMetadata();
-
   return (
-    <header className={s.header}>
-      <Logo size="32px" />
-      <h1>{title}</h1>
-      <Nav />
-    </header>
+    <AppBar position="static">
+      <Container maxWidth="xl">
+        <Toolbar disableGutters>
+          <NavMenu viewMode="desktop" />
+          <SiteTitle viewMode="desktop" />
+          <NavMenu viewMode="mobile" />
+          <SiteTitle viewMode="mobile" />
+          <AvatarMenu />
+        </Toolbar>
+      </Container>
+    </AppBar>
   );
 };
 
 export default Header;
+
+{
+  /* <SiteTitle viewMode="desktop" />
+<NavMenu viewMode="mobile" />
+<SiteTitle viewMode="mobile" />
+<NavMenu viewMode="desktop" /> */
+}
