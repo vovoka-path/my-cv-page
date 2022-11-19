@@ -19,7 +19,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"                              /* Specify what JSX code is generated. */
+    "jsx": "react"                              /* Specify what JSX code is generated. */
   },
   "include": ["./src/**/*", "./gatsby-node.ts", "./gatsby-config.ts", "./plugins/**/*"],
   "exclude": ["node_modules", "public", ".cache", "./module.css.d.ts"]
