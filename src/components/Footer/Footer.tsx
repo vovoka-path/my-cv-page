@@ -1,6 +1,5 @@
 import React from 'react';
 import { useSiteMetadata } from '../../hooks/use-site-metadata';
-import * as s from './footer.module.css';
 
 import Copyright from '../Copyright';
 import Logo from '../Logo';

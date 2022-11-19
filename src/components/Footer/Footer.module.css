@@ -1,8 +1,0 @@
-:root {
-  --logo-size: 16px;
-}
-
-.logoFooter {
-  width: var(--logo-size);
-  height: var(--logo-size);
-}
