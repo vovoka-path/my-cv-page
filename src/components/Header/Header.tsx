@@ -10,7 +10,7 @@ import AvatarMenu from '../AvatarMenu';
 
 const Header: React.FC = () => {
   return (
-    <AppBar position="sticky">
+    <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <NavMenu viewMode="desktop" />
