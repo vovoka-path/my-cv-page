@@ -1,0 +1,170 @@
+[
+  {
+    "category": "Name",
+    "items": [
+      {
+        "title": "Vladimir Polansky",
+        "subtitle": "Frontend Developer",
+        "date": "",
+        "description": ""
+      },
+      {
+        "title": "",
+        "subtitle": "Batumi, Georgia",
+        "date": "",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "category": "Contacts",
+    "items": [
+      {
+        "title": "",
+        "subtitle": "vovoka.space",
+        "date": "",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "category": "Skills",
+    "items": [
+      {
+        "title": "React, Gatsby",
+        "subtitle": "",
+        "date": "",
+        "description": ""
+      },
+      {
+        "title": "Typescript, Javascript",
+        "subtitle": "",
+        "date": "",
+        "description": ""
+      },
+      {
+        "title": "HTML5/CSS3 (SCSS/Material UI)",
+        "subtitle": "",
+        "date": "",
+        "description": ""
+      },
+      {
+        "title": "Node.js",
+        "subtitle": "",
+        "date": "",
+        "description": ""
+      },
+      {
+        "title": "MongoDB, GraphQL, mySQL",
+        "subtitle": "",
+        "date": "",
+        "description": ""
+      },
+      {
+        "title": "React Testing Library, Jest",
+        "subtitle": "",
+        "date": "",
+        "description": ""
+      },
+      {
+        "title": "Git, Webpack, ESLint",
+        "subtitle": "",
+        "date": "",
+        "description": ""
+      },
+      {
+        "title": "App design best practices, MVC",
+        "subtitle": "",
+        "date": "",
+        "description": ""
+      },
+      {
+        "title": "Understanding of UI/UX, Agile",
+        "subtitle": "",
+        "date": "",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "category": "About",
+    "items": [
+      {
+        "title": "",
+        "subtitle": "",
+        "date": "",
+        "description": "I love to travel and communicate. I've visited 14 countries. I always happy to meet new people. I like team sports and board games."
+      },
+      {
+      "title": " ",
+      "subtitle": "",
+      "date": "",
+      "description": "I have experience to deliver results within project's resources and time constraints. I know how to design an application that will be extensible in the future and convert it into components that can be easily extended and reused."
+      },
+      {
+        "title": " ",
+        "subtitle": "",
+        "date": "",
+        "description": "I have good communication skills to articulate thoughts clearly. If I don't know something, I'll go and find out. And I'll share this knowledge with a friend."
+      }
+    ]
+  },
+  {
+    "category": "Experience",
+    "items": [
+      {
+        "title": "Frontend Developer",
+        "subtitle": "React, Typescript, Javascript, Node.js, HTML, CSS",
+        "date": "december 2021 - now",
+        "description": "Developing over 15 web apps under the multilevel frontend training program of RSS (30-40 hours of practice per week) and several pet projects. Teamlead experience."
+      },
+      {
+        "title": "Wedding/portrait photographer",
+        "subtitle": "Europe",
+        "date": "2011 - 2020",
+        "description": "Wordpress, HTML, CSS, Javascript, PHP, mySQL, SEO, UX/UI, product strategy, customer journey, SMM, marketing, sales, ads, and communication with foreigners."
+      }
+    ]
+  },
+  {
+    "category": "Education",
+    "items": [
+      {
+        "title": "The Rolling Scopes School",
+        "subtitle": "Frontend Developer",
+        "date": "december 2021 - november 2022",
+        "description": "Preschool, Stage#1, Stage#2, React"
+      },
+      {
+        "title": "Belarusian State Agrarian Technical University",
+        "subtitle": "Electrical Engineer",
+        "date": "1993 - 1998",
+        "description": ""
+      }
+    ]
+  },
+
+  {
+    "category": "Languages",
+    "items": [
+      {
+        "title": "English ",
+        "subtitle": "B1 (keep improving)",
+        "date": "",
+        "description": ""
+      },
+      {
+        "title": "Belarusian",
+        "subtitle": "Native",
+        "date": "",
+        "description": ""
+      },
+      {
+        "title": "Russian",
+        "subtitle": "Native",
+        "date": "",
+        "description": ""
+      }
+    ]
+  }
+]

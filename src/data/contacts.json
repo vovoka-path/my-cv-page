@@ -1,0 +1,32 @@
+[
+  {
+    "name": "LinkedIn",
+    "icon": "LinkedIn",
+    "link": "https://www.linkedin.com/in/areawed/"
+  },
+  {
+    "name": "GitHub",
+    "icon": "GitHub",
+    "link": "https://github.com/vovoka-path"
+  },
+  {
+    "name": "Telegram",
+    "icon": "Telegram",
+    "link": "https://t.me/vovoka"
+  },
+  {
+    "name": "Discord",
+    "icon": "AccountCircle",
+    "link": "https://discordapp.com/users/919948615399665675/"
+  },
+  {
+    "name": "Twitter",
+    "icon": "Twitter",
+    "link": "https://twitter.com/HocWmVhqQoDVK9m"
+  },
+  {
+    "name": "Email",
+    "icon": "AlternateEmail",
+    "link": "mailto:vovoka.path@gmail.com"
+  }
+]
