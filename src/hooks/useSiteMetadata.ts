@@ -15,7 +15,7 @@ type SiteMetadataProps = {
   social: Social[];
 };
 
-export const useSiteMetadata = (): SiteMetadataProps => {
+const useSiteMetadata = (): SiteMetadataProps => {
   const { site } = useStaticQuery(
     graphql`
       query SiteMetaData {
@@ -39,3 +39,5 @@ export const useSiteMetadata = (): SiteMetadataProps => {
 
   return site.siteMetadata;
 };
+
+export default useSiteMetadata;
