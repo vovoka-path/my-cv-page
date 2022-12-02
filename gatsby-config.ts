@@ -39,7 +39,7 @@ const config: GatsbyConfig = {
         background_color: `#f7f0eb`,
         theme_color: `#a2466c`,
         display: `standalone`,
-        icon: `src/images/vovoka-circle-1.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo/vovoka-circle-32px.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-transformer-json`,
