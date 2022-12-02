@@ -17,7 +17,7 @@ const Copyright = ({ author, authorLink }: CopyrightProps) => {
       <MuiLink color="inherit" href={authorLink}>
         {author}
       </MuiLink>
-      {/* <Logo size="16px" /> */}
+      {/* <Logo size="16" /> */}
     </Typography>
   );
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useSiteMetadata } from '../../hooks/use-site-metadata';
+import useSiteMetadata from '../../hooks/useSiteMetadata';
 import schema from '../../data/JSON-LD-Schema.json';
 
 type SeoProps = {
@@ -53,6 +53,7 @@ const SEO: React.FC<SeoProps> = ({ title, description, pathname, children }) => 
       <meta name="twitter:site" content={seo.twitterUsername} />
       <script type="application/ld+json">{JSON.stringify(schema)}</script>
       {children}
+      {/* <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> */}
     </>
   );
 };

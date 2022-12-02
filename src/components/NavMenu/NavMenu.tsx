@@ -1,17 +1,30 @@
-import React from 'react';
+import React, { useState, MouseEvent } from 'react';
 import { graphql, Link, useStaticQuery } from 'gatsby';
 
+import { useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import IconButton from '@mui/material/IconButton';
-import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Button from '@mui/material/Button';
-import MenuItem from '@mui/material/MenuItem';
+import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 
 import { COLOR } from '../../data/constants';
+import Logo from '../../components/Logo';
 import { ViewModeProps } from '../../types/types';
+import {
+  Divider,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemIcon,
+  Toolbar,
+  Avatar,
+  Container,
+} from '@mui/material';
+
+const backgroundColor = 'white';
 
 type NodeType = {
   id: string;
@@ -30,7 +43,9 @@ type NavProps = {
 };
 
 const NavMenu: React.FC<ViewModeProps> = ({ viewMode }) => {
-  const navQuery: NavProps = useStaticQuery(graphql`
+  // return null;
+
+  const pages: EdgesType[] = useStaticQuery(graphql`
     query NavQuery {
       allNavJson {
         edges {
@@ -42,87 +57,124 @@ const NavMenu: React.FC<ViewModeProps> = ({ viewMode }) => {
         }
       }
     }
-  `);
-  const pages: EdgesType[] = navQuery.allNavJson.edges;
+  `).allNavJson.edges;
 
-  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
+  // console.log('pages', pages);
+  // return null;
 
-  const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElNav(event.currentTarget);
-  };
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
+  // const pages: EdgesType[] = navQuery.allNavJson.edges;
+
+  const [drawer, setDrawer] = useState<boolean>(false);
+
+  const toggleDrawer =
+    (isOpen: boolean) => (event: React.KeyboardEvent | MouseEvent<HTMLElement>) => {
+      if (
+        event &&
+        event.type === 'keydown' &&
+        ((event as React.KeyboardEvent).key === 'Tab' ||
+          (event as React.KeyboardEvent).key === 'Shift')
+      ) {
+        return;
+      }
+
+      setDrawer(isOpen);
+    };
+
+  const theme = useTheme();
+  const styles = { backgroundColor: theme.palette.primary.main } as const;
 
   return (
     <>
       {{
         mobile: (
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Box component="nav" sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
+              // aria-label="account of current user"
+              // aria-controls="menu-appbar"
+              // aria-haspopup="true"
+              onClick={toggleDrawer(true)}
               color="inherit"
             >
               <MenuIcon />
             </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: 'block', md: 'none' },
-              }}
+            <SwipeableDrawer
+              anchor={'left'}
+              open={drawer}
+              onClose={toggleDrawer(false)}
+              onOpen={toggleDrawer(true)}
             >
-              {pages.map((page: EdgesType) => (
-                <MenuItem key={page.node.id}>
-                  <Link
-                    style={{
-                      textDecoration: `none`,
-                      color: COLOR.LOGO,
-                      textTransform: 'uppercase',
-                      lineHeight: '100%',
-                      display: 'flex',
-                      justifyContent: 'center',
-                    }}
-                    key={page.node.id}
-                    to={page.node.link}
-                  >
-                    <ArrowRightIcon sx={{ color: COLOR.LOGO }} />
-                    <Typography key={page.node.id} textAlign="center">
-                      {page.node.name}
+              <Box
+                role="presentation"
+                onClick={toggleDrawer(false)}
+                onKeyDown={toggleDrawer(false)}
+                sx={{ width: 250, ...styles, backgroundColor: backgroundColor }}
+              >
+                <Container maxWidth="xl">
+                  <Toolbar disableGutters sx={{ display: 'flex', justifyContent: 'space-around' }}>
+                    <Avatar>
+                      <Logo size={40} />
+                    </Avatar>
+                    <Typography
+                      component="h2"
+                      variant="h5"
+                      sx={{
+                        // fontFamily: 'monospace',
+                        fontSize: '1rem',
+                        // color: COLOR.LOGO,
+                      }}
+                    >
+                      Get to know me!
                     </Typography>
-                  </Link>
-                </MenuItem>
-              ))}
-            </Menu>
+                  </Toolbar>
+                </Container>
+                <Divider />
+                <List>
+                  {pages.map((page) => (
+                    <ListItem key={page.node.id} disablePadding>
+                      <Link
+                        style={{
+                          textDecoration: `none`,
+                          color: COLOR.LOGO,
+                          textTransform: 'uppercase',
+                          lineHeight: '100%',
+                          display: 'flex',
+                          justifyContent: 'center',
+                        }}
+                        key={page.node.id}
+                        to={page.node.link}
+                      >
+                        <ListItemButton>
+                          <ListItemIcon>
+                            <ArrowRightIcon sx={{ color: COLOR.LOGO }} />
+                          </ListItemIcon>
+                          <Typography key={page.node.id} textAlign="center">
+                            {page.node.name}
+                          </Typography>
+                        </ListItemButton>
+                      </Link>
+                    </ListItem>
+                  ))}
+                </List>
+              </Box>
+            </SwipeableDrawer>
           </Box>
         ),
         desktop: (
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box component="nav" sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              <Link
-                style={{ textDecoration: `none`, color: `white` }}
-                key={page.node.id}
-                to={page.node.link}
-              >
+              <Link style={{ textDecoration: `none` }} key={page.node.id} to={page.node.link}>
                 <Button
                   key={page.node.id}
-                  onClick={() => handleCloseNavMenu()}
-                  sx={{ my: 2, color: 'white', display: 'block' }}
+                  onClick={toggleDrawer(true)}
+                  sx={{
+                    my: 0,
+                    color: COLOR.LOGO,
+                    display: 'block',
+                    fontSize: '0.8rem',
+                    fontWeight: 600,
+                    textShadow: '#Fff 1px 0 10px',
+                  }}
                 >
                   {page.node.name}
                 </Button>
