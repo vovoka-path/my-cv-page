@@ -24,7 +24,7 @@ const headerStyles = {
 let elevationData = 0;
 
 const Header: React.FC = () => {
-  const [isMinimize, setIsMinimize] = useState(window.scrollY > 60);
+  const [isMinimize, setIsMinimize] = useState(false);
 
   const scrollEffect = () => {
     elevationData = window.scrollY > 60 ? 4 : 0;
