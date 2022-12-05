@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { graphql, PageProps, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 import '@fontsource/montserrat/latin.css';
 import '@fontsource/dancing-script/latin.css';
 import Theme1 from '../components/Theme1';
@@ -10,12 +10,12 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 
-// import SEO from './SEO';
 import { ItemCVProps } from '../types/types';
 import SEO from '../components/SEO';
 import PageTitle from '../components/PageTitle';
+import useSiteMetadata from '../hooks/useSiteMetadata';
 
-const title = 'https://vovoka.space';
+const title = 'Contacts: https://vovoka.space';
 // const title = 'Vladimir Polansky, frontend developer';
 
 const printStyles = {
@@ -24,17 +24,12 @@ const printStyles = {
   },
 };
 
-// const printHideStyles = {
-//   '@media print': {
-//     display: 'none',
-//   },
-// };
-
 const baseFont = {
   marginTop: '-4px',
-  // fontSize: 0.6,
-  // lineHeight: 1,
 };
+const lineStyle = '1px dotted';
+const fontSizeStyle = '11px';
+const paddingTopStyle = '0.3rem';
 
 type NodeType = {
   category: string;
@@ -46,7 +41,7 @@ type EdgesType = {
 };
 
 const CVPrint = () => {
-  const cvQuery: EdgesType[] = useStaticQuery(graphql`
+  const dataByCategory: EdgesType[] = useStaticQuery(graphql`
     query CvQuery {
       allCvJson {
         edges {
@@ -63,16 +58,6 @@ const CVPrint = () => {
       }
     }
   `).allCvJson.edges;
-
-  const dataByCategory = cvQuery;
-
-  // const isSingleField = +!!title + +!!subtitle + +!!date + +!!description === 1;
-  // const isFirstChild = !id;
-  // const paddingTop = +!!title + +!!subtitle + +!!date + +!!description === 1 || !id ? '0' : '2rem';
-
-  const lineStyle = '1px dotted';
-  const fontSizeStyle = '11px';
-  const paddingTopStyle = '0.3rem';
 
   return (
     <StyledEngineProvider injectFirst>
@@ -252,4 +237,4 @@ const CVPrint = () => {
 
 export default CVPrint;
 
-export const Head = () => <SEO title={title} />;
+export const Head = () => <SEO title={`${useSiteMetadata().title}: ${title}`} />;

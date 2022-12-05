@@ -4,7 +4,7 @@ import { graphql, PageProps, useStaticQuery } from 'gatsby';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+// import Typography from '@mui/material/Typography';
 import SaveIcon from '@mui/icons-material/Save';
 
 import Layout from '../components/Layout';
@@ -13,10 +13,10 @@ import CvCategory from '../components/CvCategory';
 import CvItem from '../components/CvItem';
 import { ItemCVProps } from '../types/types';
 import CVpdf from '../static/VLADIMIR_POLANSKY__Frontend_developer.pdf';
-import PageTitle from '../components/PageTitle';
+import useSiteMetadata from '../hooks/useSiteMetadata';
+// import PageTitle from '../components/PageTitle';
 
 const title = 'CV';
-const CVLink = '../../VLADIMIR_POLANSKY__Frontend_developer.pdf';
 
 type NodeType = {
   category: string;
@@ -64,8 +64,6 @@ const CVPage: React.FC<PageProps> = () => {
         </Link>
       </Alert> */}
       <Container maxWidth="lg">
-        <PageTitle>{title}</PageTitle>
-        {/* <a href={CVpdf} target="_blank" rel="noopener noreferrer" download> */}
         <Box sx={{ display: 'flex', justifyContent: 'center' }}>
           <Button
             href={CVpdf}
@@ -77,10 +75,6 @@ const CVPage: React.FC<PageProps> = () => {
             Download CV
           </Button>
         </Box>
-        {/* </a> */}
-        {/* <Typography component="h2" variant="h3">
-          {title}
-        </Typography> */}
         <Box my={6}>
           {dataByCategory.map((categoryData, indexCategory) => {
             return (
@@ -109,7 +103,6 @@ const CVPage: React.FC<PageProps> = () => {
             );
           })}
         </Box>
-        {/* </> */}
       </Container>
     </Layout>
   );
@@ -117,4 +110,4 @@ const CVPage: React.FC<PageProps> = () => {
 
 export default CVPage;
 
-export const Head = () => <SEO title={title} />;
+export const Head = () => <SEO title={`${useSiteMetadata().title}: ${title}`} />;

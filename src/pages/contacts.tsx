@@ -2,15 +2,15 @@ import * as React from 'react';
 import { PageProps } from 'gatsby';
 import * as MUIcon from '@mui/icons-material';
 
-import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
-import PageTitle from '../components/PageTitle';
+// import PageTitle from '../components/PageTitle';
 import ContactIcons from '../components/ContactIcons';
 import contacts from '../data/contacts.json';
+import useSiteMetadata from '../hooks/useSiteMetadata';
 
 const title = 'Contacts';
 
@@ -18,7 +18,7 @@ const ContactsPage: React.FC<PageProps> = () => {
   return (
     <Layout>
       <Container maxWidth="lg">
-        <PageTitle>{title}</PageTitle>
+        {/* <PageTitle>{title}</PageTitle> */}
         <Container
           maxWidth="sm"
           sx={{
@@ -46,4 +46,4 @@ const ContactsPage: React.FC<PageProps> = () => {
 
 export default ContactsPage;
 
-export const Head = () => <SEO title={title} />;
+export const Head = () => <SEO title={`${useSiteMetadata().title}: ${title}`} />;
