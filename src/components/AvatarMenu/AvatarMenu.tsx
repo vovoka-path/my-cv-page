@@ -96,6 +96,7 @@ const AvatarMenu: React.FC = () => {
                 justifyContent: 'center',
               }}
               key={page.name}
+              aria-label={page.name}
               href={page.link}
               target="_blank"
               rel="noreferrer"

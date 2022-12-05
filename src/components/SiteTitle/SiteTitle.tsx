@@ -33,7 +33,7 @@ const SiteTitle: React.FC<ViewModeProps> = ({ viewMode }) => {
   const { author } = useSiteMetadata();
 
   return (
-    <Link style={{ textDecoration: 'none', color: 'white' }} to="/">
+    <Link style={{ textDecoration: 'none', color: 'white' }} to="/" aria-label="Logo">
       <Typography
         component="h1"
         // variant="h5"

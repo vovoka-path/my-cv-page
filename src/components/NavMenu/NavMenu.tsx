@@ -166,6 +166,7 @@ const NavMenu: React.FC<ViewModeProps> = ({ viewMode }) => {
               <Link style={{ textDecoration: `none` }} key={page.node.id} to={page.node.link}>
                 <Button
                   key={page.node.id}
+                  aria-label="Navigation Hamburger menu"
                   onClick={toggleDrawer(true)}
                   sx={{
                     my: 0,
