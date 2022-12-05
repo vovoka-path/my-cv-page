@@ -9,9 +9,10 @@ declare module '@mui/material/styles' {
       type: string;
       secondary: {
         main: string;
+        light: string;
       };
       text: {
-        secondary: string;
+        // secondary: string;
         hint: string;
         disabled: string;
       };
