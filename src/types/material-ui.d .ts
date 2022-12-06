@@ -10,11 +10,16 @@ declare module '@mui/material/styles' {
       secondary: {
         main: string;
         light: string;
+        dark: string;
+        contrastText: string;
       };
       text: {
         // secondary: string;
         hint: string;
         disabled: string;
+      };
+      background: {
+        paper: string;
       };
       // typography: {
       //   fontSize: string;

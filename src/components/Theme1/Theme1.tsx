@@ -30,7 +30,10 @@ const Theme1 = createTheme({
       main: '#2196F3',
       // main: '#333333',
       // main: '#a24d0c',
-      light: 'rgba(33, 150, 243, 0.56)',
+      // light: 'rgba(33, 150, 243, 0.56)',
+      light: '#70c4f6',
+      dark: '#092339',
+      contrastText: '#085391',
     },
     text: {
       hint: 'rgba(0,0,0,0.33)',
