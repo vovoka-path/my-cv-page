@@ -7,7 +7,7 @@ dotenv.config({
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `My CV`,
+    title: `Frontend developer CV`,
     author: `Vladimir Polansky`,
     authorLink: `https://vovoka.space`,
     description: `I'm frontend developer. Open to work!`,
@@ -33,13 +33,28 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `My CV`,
-        short_name: `CV`,
+        name: `Frontend developer CV`,
+        short_name: `Developer CV`,
         start_url: `/`,
         background_color: `#f7f0eb`,
         theme_color: `#a2466c`,
         display: `standalone`,
+        prefer_related_applications: true,
         icon: `src/images/logo/vovoka-circle-32px.png`, // This path is relative to the root of the site.
+        icons: [
+          {
+            src: `src/images/logo/vovoka-path-192px.jpg`,
+            sizes: `192x192`,
+            type: `image/jpg`,
+            purpose: 'any maskable',
+          },
+          {
+            src: `src/images/logo/vovoka-path-512px.jpg`,
+            sizes: `512x512`,
+            type: `image/jpg`,
+            purpose: 'any maskable',
+          },
+        ],
       },
     },
     `gatsby-transformer-json`,
