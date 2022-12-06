@@ -13,10 +13,10 @@ import Snackbar from '@mui/material/Snackbar';
 import Slide, { SlideProps } from '@mui/material/Slide';
 import SendRoundedIcon from '@mui/icons-material/SendRounded';
 
-import { COLOR } from '../../data/constants';
 import Logo from '../Logo';
 import StyledBadge from '../StyledBadge';
 import { Container } from '@mui/material';
+import Theme1 from '../Theme1';
 
 const AvatarMenu: React.FC = () => {
   const [isInvisible, setIsInvisible] = useState<boolean>(false);
@@ -91,7 +91,7 @@ const AvatarMenu: React.FC = () => {
             <a
               style={{
                 textDecoration: `none`,
-                color: COLOR.LOGO,
+                color: Theme1.palette.secondary.dark,
                 display: 'flex',
                 justifyContent: 'center',
               }}
@@ -104,7 +104,10 @@ const AvatarMenu: React.FC = () => {
               <Typography key={page.name} textAlign="center" sx={{ textTransform: 'uppercase' }}>
                 {page.name}
               </Typography>
-              <SendRoundedIcon fontSize="medium" sx={{ color: COLOR.LOGO, padding: '0 0.5rem' }} />
+              <SendRoundedIcon
+                fontSize="medium"
+                sx={{ color: Theme1.palette.secondary.dark, padding: '0 0.5rem' }}
+              />
             </a>
           </MenuItem>
         ))}
@@ -113,8 +116,8 @@ const AvatarMenu: React.FC = () => {
         <Snackbar
           open={open}
           anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
-          autoHideDuration={5000}
-          transitionDuration={{ appear: 1000, enter: 1000, exit: 1000 }}
+          autoHideDuration={3000}
+          transitionDuration={{ appear: 700, enter: 1000, exit: 700 }}
           TransitionComponent={transition}
           onClose={handleClose}
           // message="I hope We have a nice conversation soon!"
