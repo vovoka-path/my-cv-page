@@ -8,14 +8,15 @@ import Box from '@mui/material/Box';
 import * as MUIcon from '@mui/icons-material';
 import IconComp from '../IconComp';
 import Button from '@mui/material/Button';
+import Theme1 from '../Theme1';
 
-type CopyrightProps = {
+type ContactIconsProps = {
   name: string;
   icon: keyof typeof MUIcon;
   link: string;
 };
 
-const ContactIcons = ({ name, icon, link }: CopyrightProps) => {
+const ContactIcons = ({ name, icon, link }: ContactIconsProps) => {
   return (
     <Container
       // pt={paddingTop}
@@ -28,16 +29,22 @@ const ContactIcons = ({ name, icon, link }: CopyrightProps) => {
       }}
     >
       <Box
-        pr={2}
+        px={1}
         sx={{
           display: 'flex',
           // flexDirection: 'column',
           justifyContent: 'center',
           // flexWrap: 'wrap',
           textTransform: 'uppercase',
+          color: Theme1.palette.primary.main,
         }}
       >
-        <Button startIcon={<IconComp icon={icon}></IconComp>} href={link} color="secondary">
+        <Button
+          startIcon={<IconComp icon={icon}></IconComp>}
+          href={link}
+          variant="outlined"
+          sx={{ width: '120px' }}
+        >
           {name}
         </Button>
         {/* <IconComp icon={icon}></IconComp> */}
