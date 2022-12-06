@@ -1,19 +1,22 @@
 import * as React from 'react';
-import { graphql, PageProps, useStaticQuery } from 'gatsby';
+import { graphql, Link, PageProps, useStaticQuery } from 'gatsby';
 
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 // import Typography from '@mui/material/Typography';
 import SaveIcon from '@mui/icons-material/Save';
+import PrintIcon from '@mui/icons-material/Print';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
+import PagesBG from '../components/PagesBG';
 import CvCategory from '../components/CvCategory';
 import CvItem from '../components/CvItem';
 import { ItemCVProps } from '../types/types';
 import CVpdf from '../static/VLADIMIR_POLANSKY__Frontend_developer.pdf';
 import useSiteMetadata from '../hooks/useSiteMetadata';
+import Theme1 from '../components/Theme1';
 // import PageTitle from '../components/PageTitle';
 
 const title = 'CV';
@@ -26,12 +29,6 @@ type NodeType = {
 type EdgesType = {
   node: NodeType;
 };
-
-// type CVProps = {
-//   allCvJson: {
-//     edges: EdgesType[];
-//   };
-// };
 
 const CVPage: React.FC<PageProps> = () => {
   const dataByCategory: EdgesType[] = useStaticQuery(graphql`
@@ -64,16 +61,29 @@ const CVPage: React.FC<PageProps> = () => {
         </Link>
       </Alert> */}
       <Container maxWidth="lg">
-        <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+        <Box
+          sx={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: 2, my: 8 }}
+          // flexDirection={{ xs: 'column', sm: 'row' }}
+        >
           <Button
             href={CVpdf}
             variant="contained"
-            color="secondary"
+            color="primary"
             startIcon={<SaveIcon />}
-            // sx={{ justifyContent: 'center' }}
+            // sx={{ width: '180px', textShadow: '1px 2px 0 #ffffff, -1px -2px 0 #ffffff' }}
           >
             Download CV
           </Button>
+          <Link style={{ textDecoration: `none` }} to={'/cv-print'}>
+            <Button
+              variant="contained"
+              color="primary"
+              startIcon={<PrintIcon />}
+              // sx={{ width: '180px', textShadow: '1px 2px 0 #ffffff, -1px -2px 0 #ffffff' }}
+            >
+              Print version
+            </Button>
+          </Link>
         </Box>
         <Box my={6}>
           {dataByCategory.map((categoryData, indexCategory) => {
@@ -88,7 +98,7 @@ const CVPage: React.FC<PageProps> = () => {
                   <CvCategory category={categoryData.node.category} id={indexCategory} />
                   <Box
                     pt={{ xs: 2, sm: 0 }}
-                    px={{ xs: 2, sm: 4 }}
+                    px={{ xs: 0, sm: 4 }}
                     width={{ xs: '100%', sm: '70%' }}
                   >
                     {categoryData.node.items.map((cvItem, indexItem) => (
@@ -104,6 +114,7 @@ const CVPage: React.FC<PageProps> = () => {
           })}
         </Box>
       </Container>
+      <PagesBG />
     </Layout>
   );
 };

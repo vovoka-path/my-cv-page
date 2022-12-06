@@ -86,43 +86,21 @@
       }
     ]
   },
-  {
-    "category": "About",
-    "items": [
-      {
-        "title": "",
-        "subtitle": "",
-        "date": "",
-        "description": "I love to travel and communicate. I've visited 14 countries. I always happy to meet new people. I like team sports and board games."
-      },
-      {
-      "title": " ",
-      "subtitle": "",
-      "date": "",
-      "description": "I have experience to deliver results within project's resources and time constraints. I know how to design an application that will be extensible in the future and convert it into components that can be easily extended and reused."
-      },
-      {
-        "title": " ",
-        "subtitle": "",
-        "date": "",
-        "description": "I have good communication skills to articulate thoughts clearly. If I don't know something, I'll go and find out. And I'll share this knowledge with a friend."
-      }
-    ]
-  },
+
   {
     "category": "Experience",
     "items": [
       {
         "title": "Frontend Developer",
         "subtitle": "React, Typescript, Javascript, Node.js, HTML, CSS",
-        "date": "december 2021 - now",
-        "description": "Developing over 15 web apps under the multilevel frontend training program of RSS (30-40 hours of practice per week) and several pet projects. Teamlead experience."
+        "date": "december 2021 - present",
+        "description": "I developed over 15 web apps under the multilevel frontend training program of RSS (30-40 hours of practice per week) and several pet projects. Teamlead experience."
       },
       {
         "title": "Wedding/portrait photographer",
         "subtitle": "Wordpress, HTML, CSS, Javascript, PHP, mySQL",
         "date": "2011 - 2020",
-        "description": "Create over 10 Wordpress websites. Also I was doing SEO, UX/UI, product strategy, customer journey, SMM, marketing, sales, ads, and communication with foreigners."
+        "description": "I created over 10 Wordpress websites. I was doing SEO, UX/UI, product strategy, customer journey, SMM, marketing, sales, Google ads, and communication with foreigners."
       }
     ]
   },
@@ -133,7 +111,7 @@
         "title": "The Rolling Scopes School",
         "subtitle": "Frontend Developer",
         "date": "december 2021 - november 2022",
-        "description": "Preschool, Stage#1, Stage#2, React"
+        "description": "Frontend courses: «Preschool», «Stage #1», «Stage #2», «React»"
       },
       {
         "title": "Belarusian State Agrarian Technical University",
@@ -149,9 +127,9 @@
     "items": [
       {
         "title": "English ",
-        "subtitle": "B1 (keep improving)",
+        "subtitle": "Intermediate (B1)",
         "date": "",
-        "description": ""
+        "description": "Keep improving everyday"
       },
       {
         "title": "Belarusian",
@@ -162,6 +140,70 @@
       {
         "title": "Russian",
         "subtitle": "Native",
+        "date": "",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "category": "About",
+    "items": [
+      {
+      "title": "",
+      "subtitle": "",
+      "date": "",
+      "description": "During the year I gained extensive experience and knowledge on  how to design an application that will be extensible in the future and convert it into components that can be easily extended and reused. I have experience to deliver results within project's resources and time constraints."
+      },
+      {
+        "title": " ",
+        "subtitle": "",
+        "date": "",
+        "description": "Programming is my passion since I was in school. I love to travel and communicate. I've visited 14 countries. I'm happy to meet new people. I like team sports, music and board games."
+      },
+      {
+        "title": " ",
+        "subtitle": "",
+        "date": "",
+        "description": "I think I have good communication skills to articulate thoughts clearly. If I don't know something, I'll go and find out. Then I'll share this knowledge with colleagues."
+      }
+    ]
+  },
+  {
+    "category": "Interests",
+    "items": [
+      {
+        "title": "",
+        "subtitle": "Programming, creating apps",
+        "date": "",
+        "description": ""
+      },
+      {
+        "title": "",
+        "subtitle": "Innovative Technologies",
+        "date": "",
+        "description": ""
+      },
+      {
+        "title": "",
+        "subtitle": "Traveling, meet new people",
+        "date": "",
+        "description": ""
+      },
+      {
+        "title": "",
+        "subtitle": "Basketball, table tennis",
+        "date": "",
+        "description": ""
+      },
+      {
+      "title": "",
+      "subtitle": "Board games",
+      "date": "",
+      "description": ""
+      },
+      {
+        "title": "",
+        "subtitle": "Play guitar",
         "date": "",
         "description": ""
       }

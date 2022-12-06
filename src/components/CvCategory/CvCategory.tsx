@@ -8,7 +8,7 @@ import { CategoryCVProps } from '../../types/types';
 
 const lineStyle = '1px dotted';
 
-const CvCategory: React.FC<CategoryCVProps> = ({ category, id }) => {
+const CvCategory: React.FC<CategoryCVProps> = ({ category }) => {
   const theme = useTheme();
   // console.log('category', category);
 
@@ -24,7 +24,14 @@ const CvCategory: React.FC<CategoryCVProps> = ({ category, id }) => {
       sx={{ display: 'flex', lineHeight: 1.2, textTransform: 'uppercase' }}
       // key={id}
     >
-      <Typography component="h3" color={theme.palette.secondary.main} sx={{ fontWeight: 600 }}>
+      <Typography
+        component="h3"
+        color={{
+          xs: theme.palette.secondary.contrastText,
+          sm: theme.palette.secondary.contrastText,
+        }}
+        sx={{ fontWeight: 600 }}
+      >
         {category}
       </Typography>
     </Box>

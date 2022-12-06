@@ -9,13 +9,15 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 import { ItemCVProps } from '../types/types';
 import SEO from '../components/SEO';
 import PageTitle from '../components/PageTitle';
 import useSiteMetadata from '../hooks/useSiteMetadata';
+import Button from '@mui/material/Button';
 
-const title = 'Contacts: https://vovoka.space';
+const title = 'Vovoka.space <- contact me now!';
 // const title = 'Vladimir Polansky, frontend developer';
 
 const printStyles = {
@@ -64,8 +66,21 @@ const CVPrint = () => {
       <ThemeProvider theme={Theme1}>
         <CssBaseline />
         <Container maxWidth="lg">
+          {/* <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+            <Button
+              href="/cv"
+              variant="contained"
+              color="primary"
+              startIcon={<ArrowBackIcon />}
+              sx={{ @media print {
+                display: 'none'
+              }}}
+            >
+              Back to CV Page
+            </Button>
+          </Box> */}
           <PageTitle>{title}</PageTitle>
-          <Box mt={8} sx={{ ...printStyles }}>
+          <Box mt={6} sx={{ ...printStyles }}>
             {dataByCategory.map((categoryData, indexCategory) => {
               // const bgColor = index % 2 ? 'white' : 'gray';
               return (
@@ -90,7 +105,7 @@ const CVPrint = () => {
                     >
                       <Typography
                         component="h3"
-                        color={Theme1.palette.secondary.main}
+                        color={Theme1.palette.secondary.dark}
                         sx={{ fontWeight: 600, fontSize: fontSizeStyle }}
                       >
                         {categoryData.node.category}
@@ -142,7 +157,7 @@ const CVPrint = () => {
                                 <Typography
                                   component="h4"
                                   // variant={'h6'}
-                                  color={Theme1.palette.secondary.main}
+                                  color={Theme1.palette.secondary.dark}
                                   sx={{ fontWeight: 600, fontSize: fontSizeStyle }}
                                 >
                                   {cvItem.title}

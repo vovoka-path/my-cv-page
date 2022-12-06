@@ -51,7 +51,7 @@ const CvItem: React.FC<ItemCVProps> = (itemData) => {
             <Typography
               component="h4"
               // variant={'h6'}
-              color={theme.palette.secondary.main}
+              color={theme.palette.secondary.dark}
               sx={{ fontWeight: 600 }}
             >
               {title}
