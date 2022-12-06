@@ -8,7 +8,7 @@ interface IconProps {
 const IconComp: React.FC<IconProps> = ({ icon }) => {
   const Icon = icon && MUIcon[icon];
 
-  return <>{Icon && <Icon color="secondary" fontSize="large" />}</>;
+  return <>{Icon && <Icon color="primary" fontSize="large" />}</>;
 };
 
 export default IconComp;
