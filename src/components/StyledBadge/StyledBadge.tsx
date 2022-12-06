@@ -1,10 +1,11 @@
 import { styled } from '@mui/material/styles';
 import Badge from '@mui/material/Badge';
+// import Theme1 from '../Theme1';
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
   '& .MuiBadge-badge': {
-    backgroundColor: '#44b700',
-    color: '#44b700',
+    backgroundColor: theme.palette.primary.main,
+    color: theme.palette.primary.main,
     boxShadow: `0 0 0 2px ${theme.palette.background.paper}`,
     '&::after': {
       position: 'absolute',
@@ -31,3 +32,5 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 }));
 
 export default StyledBadge;
+
+//#44b700'
