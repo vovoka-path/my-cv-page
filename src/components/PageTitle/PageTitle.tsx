@@ -1,12 +1,9 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
 import Typography from '@mui/material/Typography';
-
-import useSiteMetadata from '../../hooks/useSiteMetadata';
-import { COLOR } from '../../data/constants';
-import { ViewModeProps } from '../../types/types';
 import Box from '@mui/material/Box';
+
+import Theme1 from '../Theme1';
 
 const pageTitleStyles = {
   box: {
@@ -16,12 +13,9 @@ const pageTitleStyles = {
   },
   title: {
     fontFamily: 'Dancing Script',
-    fontWeight: 500,
-    // fontSize: '1.9rem',
-    // color: '#28414b',
-    // textDecoration: 'none',
-    textShadow: '#Fff 1px 0 10px',
-    // textTransform: 'uppercase',
+    color: Theme1.palette.secondary.dark,
+    // textShadow: '#Fff 1px 0 10px',
+    textShadow: '1px 3px 0 #ffffff, -1px -3px 0 #ffffff',
   },
 };
 
@@ -32,7 +26,7 @@ type PageTitleProps = {
 const PageTitle: React.FC<PageTitleProps> = ({ children }) => {
   return (
     <Box sx={pageTitleStyles.box}>
-      <Typography component="h2" variant="h2" sx={pageTitleStyles.title}>
+      <Typography component="h2" variant="h3" sx={pageTitleStyles.title}>
         {children}
       </Typography>
     </Box>
