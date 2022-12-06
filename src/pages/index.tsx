@@ -61,21 +61,27 @@ const styles2 = {
 const textStyles = {
   title: {
     padding: '0 0 20px',
-    fontWeight: 600,
-    color: Theme1.palette.primary.main,
+    fontWeight: 700,
+    color: Theme1.palette.secondary.dark,
+    textShadow: '1px 3px 0 #ffffff, -1px -3px 0 #ffffff',
   },
   subTitle: {
     padding: '0 0 20px',
+    color: Theme1.palette.secondary.dark,
+    textShadow: '1px 2px 0 #ffffff, -1px -2px 0 #ffffff',
   },
   text: {
     padding: '0 0 40px',
+    color: Theme1.palette.secondary.contrastText,
+    textShadow: '1px 1px 0 #ffffff, -1px -1px 0 #ffffff',
   },
 };
 
 const btnStyles = {
   padding: '10px',
   margin: '10px 20px 10px 0',
-  minWidth: '140px',
+  minWidth: '105px',
+  fontWeight: 700,
 };
 
 console.log('Theme1.palette.secondary.main=', Theme1.palette.secondary.main);
@@ -88,25 +94,28 @@ const IndexPage: React.FC<PageProps> = () => {
       <Container maxWidth="lg">
         {/* <PageTitle>{title}</PageTitle> */}
         <Container maxWidth="lg">
-          <Box py={{ xs: 4, md: 16 }}>
-            <Typography variant="h2" sx={textStyles.title}>
+          <Box py={{ xs: 6, md: 15 }}>
+            <Typography variant="h2" sx={{ ...textStyles.title, width: { xs: '100%', md: '50%' } }}>
               My name is {author.split(' ')[0]}
             </Typography>
             <Typography variant="h3" sx={textStyles.subTitle}>
               I&apos;m frontend developer
             </Typography>
-            <Typography variant="body1" sx={textStyles.text}>
+            <Typography
+              variant="body1"
+              sx={{ ...textStyles.text, width: { xs: '100%', md: '50%' } }}
+            >
               I create an efficient web applications also UX research to make sure that I get what
               people needs. I have a very wide array of interests.
             </Typography>
             <Box>
               <Link style={{ textDecoration: `none` }} to={'/contacts'}>
-                <Button variant="outlined" sx={btnStyles}>
+                <Button variant="outlined" sx={btnStyles} disableElevation>
                   Contacts
                 </Button>
               </Link>
               <Link style={{ textDecoration: `none` }} to={'/cv'}>
-                <Button variant="contained" sx={{ ...btnStyles, color: 'white' }}>
+                <Button variant="contained" sx={{ ...btnStyles, color: 'white' }} disableElevation>
                   CV
                 </Button>
               </Link>
