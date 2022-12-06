@@ -17,7 +17,7 @@ const headerStyles = {
   },
   minimize: {
     position: 'fixed',
-    backgroundColor: Theme1.palette.primary.main,
+    backgroundColor: Theme1.palette.secondary.light,
   },
 };
 
