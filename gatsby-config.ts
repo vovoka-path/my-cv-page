@@ -57,6 +57,7 @@ const config: GatsbyConfig = {
         ],
       },
     },
+    'gatsby-plugin-offline',
     `gatsby-transformer-json`,
     {
       resolve: 'gatsby-source-filesystem',

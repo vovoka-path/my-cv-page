@@ -22,11 +22,13 @@
 - [ ] ? Install Typography.js https://kyleamathews.github.io/typography.js/ https://sashko.dev/typography-js/
 - ##### Set MaterialUI
 - [x] Add MaterialUI: `npm install gatsby-plugin-material-ui@next @emotion/react --legacy-peer-deps`
+- [x]  `npm install @mui/material @emotion/react @emotion/styled --legacy-peer-deps` 
 - [ ] Add MaterialUI: `npm install gatsby-theme-material-ui --legacy-peer-deps`
 - [ ] add component Theme1
 - [ ] npm install react-redux
 - [ ] install google font: `npm install @fontsource/montserrat --legacy-peer-deps`, `npm install @fontsource/dancing-script --legacy-peer-deps`
- 
+- [x] setting PWA in gatsby-config
+- [x] `npm install gatsby-plugin-offline`
 ### Main page
 - ##### Create Header
 - [ ] Create Header
@@ -56,4 +58,10 @@
 - [ ] Create component Contact
 
 
+npm install -g npm-install-peers
+npm install --legacy-peer-deps
+npm config set legacy-peer-deps true
 
+    "gatsby": "^5.0.1",
+    "@types/react": "^18.0.25",
+    "@types/node": "^18.11.9",
