@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import useSiteMetadata from '../../hooks/useSiteMetadata';
 import { COLOR } from '../../data/constants';
 import { ViewModeProps } from '../../types/types';
+import Theme1 from '../Theme1';
 
 const logoStyles = {
   base: {
@@ -14,7 +15,8 @@ const logoStyles = {
     fontFamily: 'Dancing Script',
     fontWeight: 500,
     fontSize: '1.9rem',
-    color: '#28414b',
+    color: Theme1.palette.secondary.dark,
+    // color: '#28414b',
     textDecoration: 'none',
     textShadow: '#Fff 1px 0 10px',
     // textTransform: 'uppercase',
