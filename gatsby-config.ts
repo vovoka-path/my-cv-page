@@ -43,15 +43,15 @@ const config: GatsbyConfig = {
         icon: `src/images/logo/vovoka-circle-32px.png`, // This path is relative to the root of the site.
         icons: [
           {
-            src: `src/images/logo/vovoka-path-192px.jpg`,
+            src: `src/images/logo/vovoka-path-192px.webp`,
             sizes: `192x192`,
-            type: `image/jpg`,
+            type: `image/webp`,
             purpose: 'any maskable',
           },
           {
-            src: `src/images/logo/vovoka-path-512px.jpg`,
+            src: `src/images/logo/vovoka-path-512px.webp`,
             sizes: `512x512`,
-            type: `image/jpg`,
+            type: `image/webp`,
             purpose: 'any maskable',
           },
         ],
