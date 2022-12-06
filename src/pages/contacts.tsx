@@ -11,35 +11,69 @@ import SEO from '../components/SEO';
 import ContactIcons from '../components/ContactIcons';
 import contacts from '../data/contacts.json';
 import useSiteMetadata from '../hooks/useSiteMetadata';
+import PageTitle from '../components/PageTitle';
+import PagesBG from '../components/PagesBG';
+import Typography from '@mui/material/Typography';
+import Theme1 from '../components/Theme1';
 
 const title = 'Contacts';
+
+const containerStyles = {
+  my: 4,
+  margin: '0 auto',
+  display: 'flex',
+  justifyContent: 'center',
+  flexDirection: 'row',
+  flexWrap: 'wrap',
+  fontWeight: 700,
+};
+
+const textStyles = {
+  title: {
+    my: 4,
+    mx: 'auto',
+    px: 4,
+    fontWeight: 700,
+    color: Theme1.palette.secondary.dark,
+    textShadow: '1px 3px 0 #ffffff, -1px -3px 0 #ffffff',
+  },
+  text: {
+    my: 4,
+    mx: 'auto',
+    px: 4,
+    color: Theme1.palette.secondary.contrastText,
+    textShadow: '1px 1px 0 #ffffff, -1px -1px 0 #ffffff',
+  },
+};
 
 const ContactsPage: React.FC<PageProps> = () => {
   return (
     <Layout>
       <Container maxWidth="lg">
-        {/* <PageTitle>{title}</PageTitle> */}
-        <Container
-          maxWidth="sm"
-          sx={{
-            margin: '0 auto',
-            display: 'flex',
-            justifyContent: 'center',
-            flexDirection: 'row',
-            flexWrap: 'wrap',
-          }}
-        >
-          {contacts.map((contact) => (
-            <Box key={contact.name} width={{ xs: '50%', md: '33%' }}>
-              <ContactIcons
-                name={contact.name}
-                icon={contact.icon as keyof typeof MUIcon}
-                link={contact.link}
-              />
-            </Box>
-          ))}
-        </Container>
+        <Box py={{ xs: 6, md: 16 }} sx={{ ...containerStyles, flexDirection: 'column' }}>
+          <Typography variant="h2" sx={{ ...textStyles.title }}>
+            {title}
+          </Typography>
+          <Typography variant="body1" sx={{ ...textStyles.text }}>
+            If you have any questions, please feel free to drop me a line.
+          </Typography>
+          <Container maxWidth="sm" sx={containerStyles}>
+            {/* <Typography component="p" variant="body1" sx={textStyles.text}>
+            If you have any questions, please feel free to drop me a line.
+          </Typography> */}
+            {contacts.map((contact) => (
+              <Box key={contact.name} width={{ xs: '50%', md: '33%' }}>
+                <ContactIcons
+                  name={contact.name}
+                  icon={contact.icon as keyof typeof MUIcon}
+                  link={contact.link}
+                />
+              </Box>
+            ))}
+          </Container>
+        </Box>
       </Container>
+      <PagesBG />
     </Layout>
   );
 };
