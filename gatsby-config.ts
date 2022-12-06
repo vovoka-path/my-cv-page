@@ -49,9 +49,9 @@ const config: GatsbyConfig = {
             purpose: 'any maskable',
           },
           {
-            src: `src/images/logo/vovoka-path-512px.webp`,
+            src: `src/images/logo/vovoka-path-512px.png`,
             sizes: `512x512`,
-            type: `image/webp`,
+            type: `image/png`,
             purpose: 'any maskable',
           },
         ],
