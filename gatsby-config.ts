@@ -9,9 +9,10 @@ const config: GatsbyConfig = {
   siteMetadata: {
     title: `Frontend developer CV`,
     author: `Vladimir Polansky`,
-    authorLink: `https://vovoka.space`,
+    authorLink: `https://github.com/vovoka-path`,
     description: `I'm frontend developer. Open to work!`,
     siteUrl: `https://vovoka.space`,
+    gitHubAppUrl: `https://github.com/vovoka-path/my-cv-page`,
     image: `src/images/logo/vovoka-path-512px.png`,
     social: [
       { name: `Linkedin`, link: `https://www.linkedin.com/in/areawed/` },
