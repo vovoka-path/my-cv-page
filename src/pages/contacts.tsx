@@ -48,7 +48,7 @@ const ContactsPage: React.FC<PageProps> = () => {
   return (
     <Layout>
       <Container maxWidth="lg">
-        <Box sx={{ ...containerStyles, py: { xs: 6, md: 16 }, flexDirection: 'column' }}>
+        <Box sx={{ ...containerStyles, py: { xs: 6, md: 14 }, flexDirection: 'column' }}>
           <Typography variant="h2" sx={{ ...textStyles.title }}>
             {title}
           </Typography>

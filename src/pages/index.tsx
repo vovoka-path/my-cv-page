@@ -47,7 +47,7 @@ const IndexPage: React.FC<PageProps> = () => {
     <Layout>
       <Container maxWidth="lg">
         <Container maxWidth="lg">
-          <Box py={{ xs: 6, md: 15 }}>
+          <Box py={{ xs: 6, md: 12 }}>
             <Typography variant="h2" sx={{ ...textStyles.title, width: { xs: '100%', md: '50%' } }}>
               My name is {author.split(' ')[0]}
             </Typography>
