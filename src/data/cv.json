@@ -43,7 +43,7 @@
         "description": ""
       },
       {
-        "title": "HTML5/CSS3 (SCSS/Material UI)",
+        "title": "HTML5, (S)CSS, Material UI",
         "subtitle": "",
         "date": "",
         "description": ""
@@ -111,7 +111,7 @@
         "title": "The Rolling Scopes School",
         "subtitle": "Frontend Developer",
         "date": "december 2021 - november 2022",
-        "description": "Frontend courses: «Preschool», «Stage #1», «Stage #2», «React»"
+        "description": "Four Frontend courses: «Preschool», «Stage #1», «Stage #2», «React»"
       },
       {
         "title": "Belarusian State Agrarian Technical University",
@@ -152,13 +152,13 @@
       "title": "",
       "subtitle": "",
       "date": "",
-      "description": "During the year I gained extensive experience and knowledge on  how to design an application that will be extensible in the future and convert it into components that can be easily extended and reused. I have experience to deliver results within project's resources and time constraints."
+      "description": "During the year I gained extensive experience and knowledge on how to design an application that will be extensible in the future and convert it into components that can be easily extended and reused. I have experience to deliver results within project's resources and time constraints."
       },
       {
         "title": " ",
         "subtitle": "",
         "date": "",
-        "description": "Programming is my passion since I was in school. I love to travel and communicate. I've visited 14 countries. I'm happy to meet new people. I like team sports, music and board games."
+        "description": "Programming is my passion since I was in school. I love to travel. I've visited 14 countries. I'm happy to meet new people. I like team sports, music and board games."
       },
       {
         "title": " ",
@@ -179,13 +179,19 @@
       },
       {
         "title": "",
-        "subtitle": "Innovative Technologies",
+        "subtitle": "Innovative technologies",
         "date": "",
         "description": ""
       },
       {
         "title": "",
-        "subtitle": "Traveling, meet new people",
+        "subtitle": "Psychology, history",
+        "date": "",
+        "description": ""
+      },
+      {
+        "title": "",
+        "subtitle": "Travel, meet new people",
         "date": "",
         "description": ""
       },
@@ -197,15 +203,9 @@
       },
       {
       "title": "",
-      "subtitle": "Board games",
+      "subtitle": "Play guitar, board games",
       "date": "",
       "description": ""
-      },
-      {
-        "title": "",
-        "subtitle": "Play guitar",
-        "date": "",
-        "description": ""
       }
     ]
   }
