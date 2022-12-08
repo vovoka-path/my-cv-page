@@ -11,6 +11,7 @@ type SiteMetadataProps = {
   author: string;
   authorLink: string;
   siteUrl: string;
+  gitHubAppUrl: string;
   image: string;
   social: Social[];
 };
@@ -26,6 +27,7 @@ const useSiteMetadata = (): SiteMetadataProps => {
             author
             authorLink
             siteUrl
+            gitHubAppUrl
             image
             social {
               name
