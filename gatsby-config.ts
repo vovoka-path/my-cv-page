@@ -12,7 +12,7 @@ const config: GatsbyConfig = {
     authorLink: `https://vovoka.space`,
     description: `I'm frontend developer. Open to work!`,
     siteUrl: `https://vovoka.space`,
-    image: `/images/icon/android-chrome-256x256.png`,
+    image: `src/images/logo/vovoka-path-512px.png`,
     social: [
       { name: `Linkedin`, link: `https://www.linkedin.com/in/areawed/` },
       { name: `Github`, link: `https://github.com/vovoka-path` },
