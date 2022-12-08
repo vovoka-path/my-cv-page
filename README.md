@@ -1,54 +1,59 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
+  <a href="https://reactjs.org/">
+    <img alt="React" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" width="60" />
+  </a>
+  <a href="https://www.gatsbyjs.com/">
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
   </a>
+  <a href="https://www.typescriptlang.org/">
+    <img alt="Typescript" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png" width="60" />
+  </a>
+  <a href="https://mui.com/">
+    <img alt="Material UI" src="https://cdn.worldvectorlogo.com/logos/material-ui-1.svg" width="60" />
+  </a>
 </p>
+<p align="center">
+  <a href="https://vovoka.space/">
+    <img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">
+  </a>
+</p>
+
 <h1 align="center">
-  Gatsby minimal TypeScript starter
+  My CV page
 </h1>
+<p align="center">
+  Developer: <a href="https://vovoka.space/">Vladimir Polansky</a>
+</p>
 
-## 🚀 Quick start
+***
+#### I created this project for searching a great company.
+***
 
-1.  **Create a Gatsby site.**
+## :hammer: Stack
 
-    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
+1.  **React 18.2.0.**
+2.  **Gatsby 5.2.0.**
+3.  **Typescript 4.8.4.**
+4.  **Material UI 5.10.16.**
 
-    ```shell
-    # create a new Gatsby site using the minimal TypeScript starter
-    npm init gatsby
-    ```
+## :globe_with_meridians: Deploy
 
-2.  **Start developing.**
+This [app deployed](https://vovoka.space/) on Gatsby Cloud.
 
-    Navigate into your new site’s directory and start it up.
+## :rocket: Optimization
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+**Lighthouse** report (Desktop):
 
-3.  **Open the code and start customizing!**
+![w](/src/static/2022-12-09_02_26_34-Frontend_developer_CV_%20About_me.png)
 
-    Your site is now running at http://localhost:8000!
+***
+## :incoming_envelope: Contact me!
 
-    Edit `src/pages/index.tsx` to see your site update in real-time!
+ - [Linkedin](https://www.linkedin.com/in/areawed/)
+ - [Github](https://github.com/vovoka-path)
+ - [Telegram](https://t.me/vovoka)
+ - [Discord](https://discordapp.com/users/919948615399665675/)
+ - [Twitter](https://twitter.com/HocWmVhqQoDVK9m)
+ - [Email](mailto:vovoka.path@gmail.com)
 
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
+ ***
