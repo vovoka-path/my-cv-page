@@ -39,6 +39,7 @@ const ContactIcons = ({ name, icon, link }: ContactIconsProps) => {
           href={link}
           variant="outlined"
           sx={{ width: '120px' }}
+          target="_blank"
         >
           {name}
         </Button>
