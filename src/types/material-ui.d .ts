@@ -14,23 +14,15 @@ declare module '@mui/material/styles' {
         contrastText: string;
       };
       text: {
-        // secondary: string;
         hint: string;
         disabled: string;
       };
       background: {
         paper: string;
       };
-      // typography: {
-      //   fontSize: string;
-      //   '@media print': {
-      //     fontSize: string;
-      //   };
-      // };
     };
   }
 
-  // allow configuration using `createTheme`
   interface PaletteOptions {
     type?: string;
   }
