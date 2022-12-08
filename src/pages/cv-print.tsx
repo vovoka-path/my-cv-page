@@ -2,23 +2,20 @@ import * as React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import '@fontsource/montserrat/latin.css';
 import '@fontsource/dancing-script/latin.css';
-import Theme1 from '../components/Theme1';
 
 import { StyledEngineProvider, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
+import Theme1 from '../components/Theme1';
 import { ItemCVProps } from '../types/types';
 import SEO from '../components/SEO';
 import PageTitle from '../components/PageTitle';
 import useSiteMetadata from '../hooks/useSiteMetadata';
-import Button from '@mui/material/Button';
 
 const title = 'Vovoka.space <- contact me now!';
-// const title = 'Vladimir Polansky, frontend developer';
 
 const printStyles = {
   '@media print': {
@@ -66,23 +63,9 @@ const CVPrint = () => {
       <ThemeProvider theme={Theme1}>
         <CssBaseline />
         <Container maxWidth="lg">
-          {/* <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-            <Button
-              href="/cv"
-              variant="contained"
-              color="primary"
-              startIcon={<ArrowBackIcon />}
-              sx={{ @media print {
-                display: 'none'
-              }}}
-            >
-              Back to CV Page
-            </Button>
-          </Box> */}
           <PageTitle>{title}</PageTitle>
           <Box mt={6} sx={{ ...printStyles }}>
             {dataByCategory.map((categoryData, indexCategory) => {
-              // const bgColor = index % 2 ? 'white' : 'gray';
               return (
                 <>
                   <Box
@@ -91,17 +74,14 @@ const CVPrint = () => {
                     sx={{ display: 'flex' }}
                     flexDirection={'row'}
                   >
-                    {/* <CvCategory category={categoryData.node.category} id={indexCategory} /> */}
                     <Box
                       py={0}
                       px={4}
-                      // pr={{ xs: 0, sm: '10%' }}
                       width={'20%'}
                       justifyContent={'right'}
                       borderRight={lineStyle}
                       borderTop={'none'}
                       sx={{ display: 'flex', lineHeight: 1.2, textTransform: 'uppercase' }}
-                      // key={id}
                     >
                       <Typography
                         component="h3"
@@ -113,12 +93,7 @@ const CVPrint = () => {
                     </Box>
                     <Box pt={0} px={1} width={'80%'}>
                       {categoryData.node.items.map((cvItem, indexItem) => (
-                        // <CvItem
-                        //   key={`itemCV-${indexCategory}-${indexItem}`}
-                        //   {...{ ...cvItem, id: indexItem }}
-                        // />
                         <Container
-                          // pt={paddingTop}
                           key={`itemCVp-${indexCategory}-${indexItem}`}
                           sx={{
                             paddingTop:
@@ -156,18 +131,10 @@ const CVPrint = () => {
                               >
                                 <Typography
                                   component="h4"
-                                  // variant={'h6'}
                                   color={Theme1.palette.secondary.dark}
                                   sx={{ fontWeight: 600, fontSize: fontSizeStyle }}
                                 >
                                   {cvItem.title}
-                                  {/* {Boolean(
-                                    +!!cvItem.title +
-                                      +!!cvItem.subtitle +
-                                      +!!cvItem.date +
-                                      +!!cvItem.description ===
-                                      1 || !cvItem.id
-                                  ).toString()} */}
                                 </Typography>
                               </Box>
                             )}
@@ -195,8 +162,6 @@ const CVPrint = () => {
                             >
                               <Typography
                                 component="p"
-                                // variant="h6"
-                                // color={theme.palette.text.hint}
                                 sx={{ fontWeight: '300', fontSize: fontSizeStyle }}
                               >
                                 {cvItem.date}
@@ -207,16 +172,12 @@ const CVPrint = () => {
                           {cvItem.description && (
                             <Box
                               pt={0}
-                              // pb={3.5}
                               sx={{
                                 marginTop: '1px',
                                 display: 'flex',
                                 justifyContent: 'start',
                                 width: '100%',
-                                // fontWeight: 300,
-                                // fontFamily: 'Montserrat',
                               }}
-                              // fontWeight={100}
                             >
                               <Typography
                                 component="p"
@@ -234,16 +195,7 @@ const CVPrint = () => {
                 </>
               );
             })}
-            {/* <Box sx={{ display: 'flex' }} flexDirection={{ xs: 'column', sm: 'row' }}>
-          <CvCategory category={cvCategory} />
-          <Box>
-            {cvItems.map((cvItem, index) => (
-              <CvItem key={index} {...cvItem} />
-            ))}
           </Box>
-        </Box> */}
-          </Box>
-          {/* </> */}
         </Container>
       </ThemeProvider>
     </StyledEngineProvider>

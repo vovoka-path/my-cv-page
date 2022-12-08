@@ -4,16 +4,14 @@ import * as MUIcon from '@mui/icons-material';
 
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
-// import PageTitle from '../components/PageTitle';
 import ContactIcons from '../components/ContactIcons';
 import contacts from '../data/contacts.json';
 import useSiteMetadata from '../hooks/useSiteMetadata';
-import PageTitle from '../components/PageTitle';
 import PagesBG from '../components/PagesBG';
-import Typography from '@mui/material/Typography';
 import Theme1 from '../components/Theme1';
 
 const title = 'Contacts';
@@ -50,17 +48,14 @@ const ContactsPage: React.FC<PageProps> = () => {
   return (
     <Layout>
       <Container maxWidth="lg">
-        <Box py={{ xs: 6, md: 16 }} sx={{ ...containerStyles, flexDirection: 'column' }}>
+        <Box sx={{ ...containerStyles, py: { xs: 6, md: 16 }, flexDirection: 'column' }}>
           <Typography variant="h2" sx={{ ...textStyles.title }}>
             {title}
           </Typography>
-          <Typography variant="body1" sx={{ ...textStyles.text }}>
+          <Typography variant="body1" sx={textStyles.text}>
             If you have any questions, please feel free to drop me a line.
           </Typography>
           <Container maxWidth="sm" sx={containerStyles}>
-            {/* <Typography component="p" variant="body1" sx={textStyles.text}>
-            If you have any questions, please feel free to drop me a line.
-          </Typography> */}
             {contacts.map((contact) => (
               <Box key={contact.name} width={{ xs: '50%', md: '33%' }}>
                 <ContactIcons
