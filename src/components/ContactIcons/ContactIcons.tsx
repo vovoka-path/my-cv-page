@@ -1,13 +1,11 @@
 import * as React from 'react';
 
-import Typography from '@mui/material/Typography';
-import MuiLink from '@mui/material/Link';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
-
-import * as MUIcon from '@mui/icons-material';
-import IconComp from '../IconComp';
 import Button from '@mui/material/Button';
+import * as MUIcon from '@mui/icons-material';
+
+import IconComp from '../IconComp';
 import Theme1 from '../Theme1';
 
 type ContactIconsProps = {
@@ -19,7 +17,6 @@ type ContactIconsProps = {
 const ContactIcons = ({ name, icon, link }: ContactIconsProps) => {
   return (
     <Container
-      // pt={paddingTop}
       sx={{
         paddingTop: 4,
         paddingBottom: '0',
@@ -32,9 +29,7 @@ const ContactIcons = ({ name, icon, link }: ContactIconsProps) => {
         px={1}
         sx={{
           display: 'flex',
-          // flexDirection: 'column',
           justifyContent: 'center',
-          // flexWrap: 'wrap',
           textTransform: 'uppercase',
           color: Theme1.palette.primary.main,
         }}
@@ -47,7 +42,6 @@ const ContactIcons = ({ name, icon, link }: ContactIconsProps) => {
         >
           {name}
         </Button>
-        {/* <IconComp icon={icon}></IconComp> */}
       </Box>
     </Container>
   );

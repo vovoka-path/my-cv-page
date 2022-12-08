@@ -14,7 +14,6 @@ const pageTitleStyles = {
   title: {
     fontFamily: 'Dancing Script',
     color: Theme1.palette.secondary.dark,
-    // textShadow: '#Fff 1px 0 10px',
     textShadow: '1px 3px 0 #ffffff, -1px -3px 0 #ffffff',
   },
 };

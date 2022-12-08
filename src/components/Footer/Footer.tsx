@@ -1,10 +1,10 @@
 import React from 'react';
-import useSiteMetadata from '../../hooks/useSiteMetadata';
 
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 
 import Copyright from '../Copyright';
+import useSiteMetadata from '../../hooks/useSiteMetadata';
 
 const Footer: React.FC = () => {
   const { author, authorLink } = useSiteMetadata();

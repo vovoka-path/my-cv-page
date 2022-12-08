@@ -15,7 +15,7 @@ const headerStyles = {
     position: 'static',
     backgroundColor: 'transparent',
   },
-  minimize: {
+  fixed: {
     position: 'fixed',
     backgroundColor: Theme1.palette.secondary.light,
   },
@@ -24,11 +24,11 @@ const headerStyles = {
 let elevationData = 0;
 
 const Header: React.FC = () => {
-  const [isMinimize, setIsMinimize] = useState(false);
+  const [isFixed, setIsFixed] = useState(false);
 
   const scrollEffect = () => {
     elevationData = window.scrollY > 60 ? 4 : 0;
-    setIsMinimize(window.scrollY > 60);
+    setIsFixed(window.scrollY > 60);
   };
 
   useEffect(() => {
@@ -40,10 +40,7 @@ const Header: React.FC = () => {
   }, []);
 
   return (
-    <AppBar
-      elevation={elevationData}
-      sx={[isMinimize ? headerStyles.minimize : headerStyles.start]}
-    >
+    <AppBar elevation={elevationData} sx={[isFixed ? headerStyles.fixed : headerStyles.start]}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <NavMenu viewMode="desktop" />

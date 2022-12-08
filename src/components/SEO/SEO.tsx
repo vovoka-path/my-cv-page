@@ -53,7 +53,6 @@ const SEO: React.FC<SeoProps> = ({ title, description, pathname, children }) => 
       <meta name="twitter:site" content={seo.twitterUsername} />
       <script type="application/ld+json">{JSON.stringify(schema)}</script>
       {children}
-      {/* <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> */}
     </>
   );
 };

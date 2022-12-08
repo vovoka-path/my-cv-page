@@ -4,7 +4,6 @@ import { Link } from 'gatsby';
 import Typography from '@mui/material/Typography';
 
 import useSiteMetadata from '../../hooks/useSiteMetadata';
-import { COLOR } from '../../data/constants';
 import { ViewModeProps } from '../../types/types';
 import Theme1 from '../Theme1';
 
@@ -16,10 +15,8 @@ const logoStyles = {
     fontWeight: 500,
     fontSize: '1.9rem',
     color: Theme1.palette.secondary.dark,
-    // color: '#28414b',
     textDecoration: 'none',
     textShadow: '#Fff 1px 0 10px',
-    // textTransform: 'uppercase',
   },
   mobile: {
     display: { xs: 'flex', md: 'none' },
@@ -38,7 +35,6 @@ const SiteTitle: React.FC<ViewModeProps> = ({ viewMode }) => {
     <Link style={{ textDecoration: 'none', color: 'white' }} to="/" aria-label="Logo">
       <Typography
         component="h1"
-        // variant="h5"
         noWrap
         sx={{
           ...logoStyles.base,

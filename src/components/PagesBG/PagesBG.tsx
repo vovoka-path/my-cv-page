@@ -2,22 +2,20 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import Theme1 from '../Theme1';
 
-const parentParentStyles = {
+const containerStyles = {
   top: '0',
   right: '0',
   width: '55%',
-  // height: '716px',
   position: 'absolute',
   zIndex: '-100',
 };
 
-const parentStyles = {
+const subContainerStyles = {
   width: '100%',
-  // height: '100%',
   backgroundImage: 'linear-gradient(30deg, #2196F3 50%, #FF9800 140%)',
 };
 
-const styles1 = {
+const imgOneStyles = {
   top: '0px',
   left: '-1px',
   width: '100%',
@@ -32,12 +30,12 @@ const styles1 = {
 
 const PagesBG = () => {
   return (
-    <Box component="div" sx={parentParentStyles} height="260px">
-      <Box component="div" sx={parentStyles}>
+    <Box component="div" sx={containerStyles} height="260px">
+      <Box component="div" sx={subContainerStyles}>
         <Box
           component="div"
           sx={{
-            ...styles1,
+            ...imgOneStyles,
             backgroundSize: '100% 260px',
           }}
         ></Box>

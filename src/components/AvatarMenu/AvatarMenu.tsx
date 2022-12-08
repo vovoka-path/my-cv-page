@@ -12,10 +12,10 @@ import Alert from '@mui/material/Alert';
 import Snackbar from '@mui/material/Snackbar';
 import Slide, { SlideProps } from '@mui/material/Slide';
 import SendRoundedIcon from '@mui/icons-material/SendRounded';
+import { Container } from '@mui/material';
 
 import Logo from '../Logo';
 import StyledBadge from '../StyledBadge';
-import { Container } from '@mui/material';
 import Theme1 from '../Theme1';
 
 const AvatarMenu: React.FC = () => {
@@ -50,7 +50,6 @@ const AvatarMenu: React.FC = () => {
   };
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
-    // console.log('handleCloseUserMenu=', TransitionRight);
     handleClick(TransitionRight);
   };
 
@@ -114,14 +113,13 @@ const AvatarMenu: React.FC = () => {
       </Menu>
       <Container>
         <Snackbar
+          key={transition ? transition.name : ''}
           open={open}
           anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
           autoHideDuration={3000}
           transitionDuration={{ appear: 700, enter: 1000, exit: 700 }}
           TransitionComponent={transition}
           onClose={handleClose}
-          // message="I hope We have a nice conversation soon!"
-          key={transition ? transition.name : ''}
           sx={{ marginTop: '3.2rem' }}
         >
           <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>

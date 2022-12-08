@@ -1,36 +1,13 @@
 import { createTheme } from '@mui/material/styles';
 
-// declare module '@mui/material/styles' {
-//   interface Theme {
-//     palette: {
-//       type: string;
-//     };
-//   }
-
-//   // allow configuration using `createTheme`
-//   interface PaletteOptions {
-//     type?: string;
-//   }
-// }
-
 const Theme1 = createTheme({
   palette: {
     type: 'light',
     primary: {
       main: '#FF9800',
-      // main: '#d9dee1',
-
-      // main: '#0C61A2',
-      // light: '#757ce8',
-      // main: '#3f50b5',
-      // dark: '#002884',
-      // contrastText: '#fff',
     },
     secondary: {
       main: '#2196F3',
-      // main: '#333333',
-      // main: '#a24d0c',
-      // light: 'rgba(33, 150, 243, 0.56)',
       light: '#70c4f6',
       dark: '#092339',
       contrastText: '#085391',
@@ -41,7 +18,6 @@ const Theme1 = createTheme({
     },
   },
   typography: {
-    // fontFamily: 'Oswald',
     fontFamily: 'Montserrat, sans, Dancing Script',
     h1: {
       fontSize: '4rem',
@@ -76,10 +52,6 @@ const Theme1 = createTheme({
     body1: {
       fontWeight: 300,
     },
-    // fontSize: '26px',
-    // '@media print': {
-    //   fontSize: '10px',
-    // },
   },
 });
 

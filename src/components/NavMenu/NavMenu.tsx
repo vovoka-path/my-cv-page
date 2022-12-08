@@ -1,9 +1,6 @@
 import React, { useState, MouseEvent } from 'react';
 import { graphql, Link, useStaticQuery } from 'gatsby';
-import type { GatsbyLinkProps } from 'gatsby';
-import type { PageProps } from 'gatsby';
 
-import { useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import IconButton from '@mui/material/IconButton';
@@ -12,7 +9,6 @@ import Button from '@mui/material/Button';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 
-import { COLOR } from '../../data/constants';
 import Logo from '../../components/Logo';
 import { ViewModeProps } from '../../types/types';
 import {
@@ -27,29 +23,9 @@ import {
 } from '@mui/material';
 import Theme1 from '../Theme1';
 
-const backgroundColor = 'white';
-
-// type IsAciveProps = {
-//   isCurrent: boolean;
-// };
-
-// const isActive = ({ isCurrent }: IsAciveProps) => {
-//   return isCurrent ? { className: 'active' } : {};
-// };
-
-// const NavLink: React.FC<GatsbyLinkProps<TState>> = ({
-//   children,
-//   ...props
-// }: React.PropsWithoutRef<GatsbyLinkProps<TState>>) => (
-//   <Link<TState> getProps={isActive} {...props}>
-//     {children}
-//   </TState>
-// );
-
 const linkStyles = {
   color: Theme1.palette.secondary.dark,
   textDecoration: `none`,
-  // fontSize: '0.8rem',
   fontWeight: 700,
   textAlign: 'left',
   padding: 0,
@@ -66,16 +42,8 @@ type EdgesType = {
   node: NodeType;
 };
 
-type NavProps = {
-  allNavJson: {
-    edges: EdgesType[];
-  };
-};
-
 const NavMenu: React.FC<ViewModeProps> = ({ viewMode }) => {
-  // return null;
   const [drawer, setDrawer] = useState<boolean>(false);
-  const theme = useTheme();
 
   const pages: EdgesType[] = useStaticQuery(graphql`
     query NavQuery {
@@ -113,9 +81,6 @@ const NavMenu: React.FC<ViewModeProps> = ({ viewMode }) => {
             <IconButton
               aria-label="Navigation Hamburger menu"
               size="large"
-              // aria-label="account of current user"
-              // aria-controls="menu-appbar"
-              // aria-haspopup="true"
               onClick={toggleDrawer(true)}
               color="inherit"
             >
@@ -133,7 +98,6 @@ const NavMenu: React.FC<ViewModeProps> = ({ viewMode }) => {
                 onKeyDown={toggleDrawer(false)}
                 sx={{
                   width: 250,
-                  // backgroundColor: theme.palette.primary.main,
                 }}
               >
                 <Container maxWidth="xl">
@@ -161,10 +125,8 @@ const NavMenu: React.FC<ViewModeProps> = ({ viewMode }) => {
                         style={{
                           width: '100%',
                           textDecoration: `none`,
-                          // color: Theme1.palette.secondary.dark,
                           textTransform: 'uppercase',
                           lineHeight: '100%',
-                          // fontWeight: 700,
                           display: 'flex',
                           justifyContent: 'center',
                         }}
@@ -192,26 +154,21 @@ const NavMenu: React.FC<ViewModeProps> = ({ viewMode }) => {
           <Box component="nav" sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Link
-                style={{ ...linkStyles }}
                 key={page.node.id}
                 to={page.node.link}
+                style={{ ...linkStyles }}
                 activeStyle={{
-                  // color: Theme1.palette.secondary.main,
                   textDecoration: `underline 2px dotted`,
                 }}
               >
                 <Button
                   key={page.node.id}
-                  // onClick={toggleDrawer(true)}
                   sx={{
                     my: 0,
-                    // color: Theme1.palette.secondary.contrastText,
                     color: 'inherit',
                     display: 'block',
                     fontSize: '0.8rem',
                     fontWeight: 700,
-                    // textShadow: '#Fff 1px 0 10px',
-                    // textShadow: '1px 1px 0 #ffffff, -1px -1px 0 #ffffff',
                   }}
                 >
                   {page.node.name}
