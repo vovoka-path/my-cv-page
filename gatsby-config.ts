@@ -11,7 +11,7 @@ const config: GatsbyConfig = {
     author: `Vladimir Polansky`,
     authorLink: `https://github.com/vovoka-path`,
     description: `I'm frontend developer. Open to work!`,
-    siteUrl: `https://vovoka.space`,
+    siteUrl: `https://vovoka.space/`,
     gitHubAppUrl: `https://github.com/vovoka-path/my-cv-page`,
     image: `src/images/logo/vovoka-path-512px.png`,
     social: [
