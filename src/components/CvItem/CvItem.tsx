@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 
 import { ItemCVProps } from '../../types/types';
+import { Link } from 'gatsby-theme-material-ui';
 
 const baseFontStyles = {
   marginTop: '-4px',
@@ -86,15 +87,30 @@ const CvItem: React.FC<ItemCVProps> = (itemData) => {
             justifyContent: 'start',
           }}
         >
-          <Typography component="p" sx={{ fontWeight: '300', color: 'rgba(51, 51, 51, 0.9)' }}>
-            {description_link ? (
-              <a target="_blank" rel="noopener noreferrer" href={description_link}>
-                {description}
-              </a>
-            ) : (
-              description
-            )}
-          </Typography>
+          {description_link ? (
+            <Link
+              target="_blank"
+              rel="noopener noreferrer"
+              href={description_link}
+              sx={{
+                color: theme.palette.secondary.dark,
+                textDecorationColor: theme.palette.secondary.dark,
+                fontWeight: '500',
+              }}
+            >
+              {description}
+            </Link>
+          ) : (
+            <Typography
+              component="p"
+              sx={{
+                fontWeight: '300',
+                color: 'rgba(51, 51, 51, 0.9)',
+              }}
+            >
+              {description}
+            </Typography>
+          )}
         </Box>
       )}
     </Container>
