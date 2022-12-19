@@ -36,9 +36,10 @@ const CVPage: React.FC<PageProps> = () => {
             category
             items {
               date
-              description
-              subtitle
               title
+              subtitle
+              description
+              description_link
             }
           }
         }

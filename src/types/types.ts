@@ -5,11 +5,12 @@ export type ViewModeProps = {
 };
 
 export type ItemCVProps = {
+  id: number;
   title: string;
   subtitle: string;
   date: string;
   description: string;
-  id: number;
+  description_link?: string;
 };
 
 export type CategoryCVProps = {

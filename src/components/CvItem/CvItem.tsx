@@ -14,7 +14,7 @@ const baseFontStyles = {
 };
 
 const CvItem: React.FC<ItemCVProps> = (itemData) => {
-  const { title, subtitle, date, description, id } = itemData;
+  const { id, title, subtitle, date, description, description_link } = itemData;
   const theme = useTheme();
 
   const isSingleField = +!!title + +!!subtitle + +!!date + +!!description === 1;
@@ -87,7 +87,13 @@ const CvItem: React.FC<ItemCVProps> = (itemData) => {
           }}
         >
           <Typography component="p" sx={{ fontWeight: '300', color: 'rgba(51, 51, 51, 0.9)' }}>
-            {description}
+            {description_link ? (
+              <a target="_blank" rel="noopener noreferrer" href={description_link}>
+                {description}
+              </a>
+            ) : (
+              description
+            )}
           </Typography>
         </Box>
       )}

@@ -6,13 +6,16 @@
         "title": "Vladimir Polansky",
         "subtitle": "Frontend Developer",
         "date": "",
-        "description": ""
+        "description": "",
+        "description_link": ""
       },
       {
         "title": "",
+        "title_link": "",
         "subtitle": "Batumi, Georgia",
         "date": "",
-        "description": ""
+        "description": "",
+        "description_link": ""
       }
     ]
   },
@@ -21,33 +24,38 @@
     "items": [
       {
         "title": "",
-        "subtitle": "vovoka.space",
+        "subtitle": "",
         "date": "",
-        "description": ""
+        "description": "vovoka.space",
+        "description_link": "https://vovoka.space"
       },
       {
         "title": "",
         "subtitle": "",
         "date": "",
-        "description": "vovoka.path@gmail.com"
+        "description": "vovoka.path@gmail.com",
+        "description_link": "mailto:vovoka.path@gmail.com"
       },
       {
         "title": "",
         "subtitle": "",
         "date": "",
-        "description": "github.com/vovoka-path"
+        "description": "github.com/vovoka-path",
+        "description_link": "https://github.com/vovoka-path"
       },
       {
         "title": "",
         "subtitle": "",
         "date": "",
-        "description": "t.me/vovoka"
+        "description": "t.me/vovoka",
+        "description_link": "https://t.me/vovoka"
       },
       {
         "title": "",
         "subtitle": "",
         "date": "",
-        "description": "linkedin.com/in/areawed"
+        "description": "linkedin.com/in/areawed",
+        "description_link": "https://linkedin.com/in/areawed"
       }
     ]
   },
@@ -58,55 +66,64 @@
         "title": "React, Gatsby",
         "subtitle": "",
         "date": "",
-        "description": ""
+        "description": "",
+        "description_link": ""
       },
       {
         "title": "Typescript, Javascript",
         "subtitle": "",
         "date": "",
-        "description": ""
+        "description": "",
+        "description_link": ""
       },
       {
         "title": "HTML5, (S)CSS, Material UI",
         "subtitle": "",
         "date": "",
-        "description": ""
+        "description": "",
+        "description_link": ""
       },
       {
         "title": "Node, Express",
         "subtitle": "",
         "date": "",
-        "description": ""
+        "description": "",
+        "description_link": ""
       },
       {
         "title": "MongoDB, GraphQL, mySQL",
         "subtitle": "",
         "date": "",
-        "description": ""
+        "description": "",
+        "description_link": ""
       },
       {
         "title": "Testing Library, Jest",
         "subtitle": "",
         "date": "",
-        "description": ""
+        "description": "",
+        "description_link": ""
       },
       {
         "title": "Git, Webpack, ESLint",
         "subtitle": "",
         "date": "",
-        "description": ""
+        "description": "",
+        "description_link": ""
       },
       {
         "title": "App design best practices, MVC",
         "subtitle": "",
         "date": "",
-        "description": ""
+        "description": "",
+        "description_link": ""
       },
       {
         "title": "Understanding of UI/UX, Agile",
         "subtitle": "",
         "date": "",
-        "description": ""
+        "description": "",
+        "description_link": ""
       }
     ]
   },
@@ -118,13 +135,15 @@
         "title": "Frontend Developer",
         "subtitle": "React, Typescript, Javascript, Node.js, HTML, CSS",
         "date": "december 2021 - november 2022",
-        "description": "Developed over 15 web apps under the multilevel frontend training program of RSS (30-40 hours of practice per week during ~1 year) and several pet projects. Team leader experience."
+        "description": "Developed over 15 web apps under the multilevel frontend training program of RSS (30-40 hours of practice per week during ~1 year) and several pet projects. Team leader experience.",
+        "description_link": ""
       },
       {
         "title": "Wedding/portrait photographer",
         "subtitle": "Wordpress, HTML, CSS, Javascript, PHP, mySQL",
         "date": "2011 - 2020",
-        "description": "Сreated over 10 websites using Wordpress. Dealt with SEO, UX/UI, product strategy, customer journey, SMM, marketing, sales, Google ads, and communication with foreigners."
+        "description": "Сreated over 10 websites using Wordpress. Dealt with SEO, UX/UI, product strategy, customer journey, SMM, marketing, sales, Google ads, and communication with foreigners.",
+        "description_link": ""
       }
     ]
   },
@@ -135,13 +154,15 @@
         "title": "The Rolling Scopes School",
         "subtitle": "Frontend Developer",
         "date": "december 2021 - november 2022",
-        "description": "Four Frontend courses: «Preschool», «Stage #1», «Stage #2», «React»"
+        "description": "Four Frontend courses: «Preschool», «Stage #1», «Stage #2», «React»",
+        "description_link": ""
       },
       {
         "title": "Belarusian State Agrarian Technical University",
         "subtitle": "Electrical Engineer",
         "date": "1993 - 1998",
-        "description": ""
+        "description": "",
+        "description_link": ""
       }
     ]
   },
@@ -153,19 +174,22 @@
         "title": "English ",
         "subtitle": "Intermediate (B1)",
         "date": "",
-        "description": "Keep improving everyday"
+        "description": "Keep improving everyday",
+        "description_link": ""
       },
       {
         "title": "Belarusian",
         "subtitle": "Native",
         "date": "",
-        "description": ""
+        "description": "",
+        "description_link": ""
       },
       {
         "title": "Russian",
         "subtitle": "Native",
         "date": "",
-        "description": ""
+        "description": "",
+        "description_link": ""
       }
     ]
   },
@@ -176,13 +200,15 @@
       "title": "",
       "subtitle": "",
       "date": "",
-      "description": "Experienced in e-commerce. Good communication skills to articulate thoughts clearly. Delivered results within project's resources and time constraints. Happy to meet new people. Visited 14 countries."
+      "description": "Experienced in e-commerce. Good communication skills to articulate thoughts clearly. Delivered results within project's resources and time constraints. Happy to meet new people. Visited 14 countries.",
+      "description_link": ""
       },
       {
         "title": " ",
         "subtitle": "",
         "date": "",
-        "description": "I don’t give up when it’s hard. If I don't know something, I'll go and find out. If anyone asks, I’ll share that knowledge."
+        "description": "I don’t give up when it’s hard. If I don't know something, I'll go and find out. If anyone asks, I’ll share that knowledge.",
+        "description_link": ""
       }
     ]
   },
@@ -193,37 +219,43 @@
         "title": "",
         "subtitle": "Programming, creating apps",
         "date": "",
-        "description": ""
+        "description": "",
+        "description_link": ""
       },
       {
         "title": "",
         "subtitle": "Innovative technologies",
         "date": "",
-        "description": ""
+        "description": "",
+        "description_link": ""
       },
       {
         "title": "",
         "subtitle": "Psychology, history",
         "date": "",
-        "description": ""
+        "description": "",
+        "description_link": ""
       },
       {
         "title": "",
         "subtitle": "Travel, meet new people",
         "date": "",
-        "description": ""
+        "description": "",
+        "description_link": ""
       },
       {
         "title": "",
         "subtitle": "Basketball, table tennis",
         "date": "",
-        "description": ""
+        "description": "",
+        "description_link": ""
       },
       {
       "title": "",
       "subtitle": "Play guitar, board games",
       "date": "",
-      "description": ""
+      "description": "",
+      "description_link": ""
       }
     ]
   }
