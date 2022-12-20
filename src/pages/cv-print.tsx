@@ -48,9 +48,10 @@ const CVPrint = () => {
             category
             items {
               date
-              description
-              subtitle
               title
+              subtitle
+              description
+              description_link
             }
           }
         }
