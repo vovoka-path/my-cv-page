@@ -11,7 +11,6 @@
 - [x] Set tsconfig.json
 - [x] Set .prettierrc.json
 - [x] Set .eslintrc.js
-- [x] Set tsconfig.json
 - [x] Create hook useSiteMetadata
 - [x] Create component SEO
 - [x] Create component Logo
@@ -31,37 +30,34 @@
 - [x] `npm install gatsby-plugin-offline`
 ### Main page
 - ##### Create Header
-- [ ] Create Header
+- [x] Create Header
 - ##### Create Footer
-- [ ] Create Footerhook useHeaderHeight
+- [x] Create useElementHeightByTag
 - ##### Create components
-- [ ] Create component Layout
-  - [ ] Create hook useHeaderHeight
-  - [ ] Create hook useFooterHeight
+- [x] Create component Layout
+
 - [ ] Create component Hero
-- [ ] Create component Skill
-- [ ] Create component SkillList
+- [x] Create component Skill
+- [x] Create component SkillList
 - [ ] Create component About
 - [ ] Create component Project
 - [ ] Create component ProjectList
-- [ ] Create component Experience
-- [ ] Create component ExperienceList
-- [ ] Create component Education
-- [ ] Create component EducationList
-- [ ] Create component Language
-- [ ] Create component LanguageList
+
 ### CV page
 - ##### Create components
-- [ ] Create component CVItem
+- [x] Create component CVItem
 ### Contacts page
 - ##### Create components
-- [ ] Create component Contact
+- [x] Create component Contact
 
+
+Remarks:
 
 npm install -g npm-install-peers
 npm install --legacy-peer-deps
 npm config set legacy-peer-deps true
 
-    "gatsby": "^5.0.1",
-    "@types/react": "^18.0.25",
-    "@types/node": "^18.11.9",
+"gatsby": "^5.0.1",
+"@types/react": "^18.0.25",
+"@types/node": "^18.11.9",
+node: 14.16.1
