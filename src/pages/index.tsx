@@ -52,7 +52,6 @@ const btnStyles = {
 
 const heroImgStyles = {
   alignItem: 'right',
-  // paddingTop: 6,
   borderRadius: '50%',
   borderBottom: '18px solid #FF9800',
 };
@@ -78,8 +77,6 @@ const IndexPage: React.FC<PageProps> = () => {
               placeholder="none"
               layout="constrained"
               imgStyle={heroImgStyles}
-              // width={{ xs: 196, sm: 256 }}
-              // height={{ xs: 196, sm: 256 }}
             />
           </Box>
           <Box py={{ xs: 2, md: 2 }}>
