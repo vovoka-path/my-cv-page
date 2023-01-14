@@ -12,7 +12,7 @@
       {
         "title": "",
         "title_link": "",
-        "subtitle": "Batumi, Georgia",
+        "subtitle": "Minsk, remote, relocate",
         "date": "",
         "description": "",
         "description_link": ""
@@ -105,21 +105,21 @@
         "description_link": ""
       },
       {
-        "title": "Git, Webpack, ESLint",
+        "title": "Git, Webpack",
         "subtitle": "",
         "date": "",
         "description": "",
         "description_link": ""
       },
       {
-        "title": "App design best practices, MVC",
+        "title": "Best practices, MVC, OOP",
         "subtitle": "",
         "date": "",
         "description": "",
         "description_link": ""
       },
       {
-        "title": "Understanding of UI/UX, Agile",
+        "title": "Understanding of UI/UX",
         "subtitle": "",
         "date": "",
         "description": "",
@@ -133,9 +133,9 @@
     "items": [
       {
         "title": "Frontend Developer",
-        "subtitle": "React, Typescript, Javascript, Node.js, HTML, CSS",
+        "subtitle": "React, Typescript, Javascript, Node, HTML, CSS",
         "date": "dec 2021 - nov 2022",
-        "description": "Developed over 15 web apps under the multilevel frontend training program of RSS (30-40 hours of practice per week during ~1 year) and several pet projects. Team leader experience.",
+        "description": "Developed over 10 web apps under the multilevel frontend training program of RSS (30-40 hours of practice per week during ~1 year) and several pet projects. Team leader experience.",
         "description_link": ""
       },
       {
@@ -155,6 +155,13 @@
         "subtitle": "Frontend Developer",
         "date": "dec 2021 - nov 2022",
         "description": "Four Frontend courses: «Preschool», «Stage #1», «Stage #2», «React»",
+        "description_link": ""
+      },
+      {
+        "title": "Mentor Zar Zakharov",
+        "subtitle": "Frontend Developer",
+        "date": "apr 2022 - aug 2022",
+        "description": "Complete React Developer Course (it-course.online)",
         "description_link": ""
       },
       {
@@ -200,7 +207,7 @@
         "title": " ",
         "subtitle": "",
         "date": "",
-        "description": "I don’t give up when it’s hard. If I don't know something, I'll go and find out. If anyone asks, I’ll share that knowledge.",
+        "description": "When things get tough, I don't give up. I'll go find out if I don't know something. If someone asks, I'll gladly share my knowledge.",
         "description_link": ""
       }
     ]
@@ -210,35 +217,21 @@
     "items": [
       {
         "title": "",
-        "subtitle": "Programming, creating apps",
+        "subtitle": "Creating apps",
         "date": "",
         "description": "",
         "description_link": ""
       },
       {
         "title": "",
-        "subtitle": "Innovative technologies",
+        "subtitle": "Travel, photography",
         "date": "",
         "description": "",
         "description_link": ""
       },
       {
         "title": "",
-        "subtitle": "Psychology, history",
-        "date": "",
-        "description": "",
-        "description_link": ""
-      },
-      {
-        "title": "",
-        "subtitle": "Travel, meet new people",
-        "date": "",
-        "description": "",
-        "description_link": ""
-      },
-      {
-        "title": "",
-        "subtitle": "Basketball, table tennis",
+        "subtitle": "Basketball, tennis",
         "date": "",
         "description": "",
         "description_link": ""
@@ -249,6 +242,13 @@
       "date": "",
       "description": "",
       "description_link": ""
+      },
+      {
+        "title": "",
+        "subtitle": "Psychology, history",
+        "date": "",
+        "description": "",
+        "description_link": ""
       }
     ]
   }
