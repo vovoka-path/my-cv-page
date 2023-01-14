@@ -22,12 +22,14 @@
 - ##### Set MaterialUI
 - [x] Add MaterialUI: `npm install gatsby-plugin-material-ui@next @emotion/react --legacy-peer-deps`
 - [x]  `npm install @mui/material @emotion/react @emotion/styled --legacy-peer-deps` 
-- [ ] Add MaterialUI: `npm install gatsby-theme-material-ui --legacy-peer-deps`
-- [ ] add component Theme1
-- [ ] npm install react-redux
-- [ ] install google font: `npm install @fontsource/montserrat --legacy-peer-deps`, `npm install @fontsource/dancing-script --legacy-peer-deps`
-- [x] setting PWA in gatsby-config
+- [x] Add MaterialUI: `npm install gatsby-theme-material-ui --legacy-peer-deps`
+- [x] Add component Theme1
+- [ ] ? Install google font: `npm install @fontsource/montserrat --legacy-peer-deps`, `npm install @fontsource/dancing-script --legacy-peer-deps`
 - [x] `npm install gatsby-plugin-offline`
+- [x] `npm install gatsby-plugin-manifest`
+- [x] Setting PWA in gatsby-config
+- [x] `npm install gatsby-plugin-sitemap`
+- [x] `npm install --save gatsby-plugin-robots-txt`
 ### Main page
 - ##### Create Header
 - [x] Create Header
