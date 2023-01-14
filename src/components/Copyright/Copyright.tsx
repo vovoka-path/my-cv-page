@@ -9,7 +9,12 @@ type CopyrightProps = {
 
 const Copyright = ({ author, authorLink }: CopyrightProps) => {
   return (
-    <Typography variant="body2" color="text.secondary" align="center">
+    <Typography
+      variant="body2"
+      color="text.secondary"
+      align="center"
+      sx={{ textShadow: '1px 1px 0 #ffffff, -1px -1px 0 #ffffff' }}
+    >
       {'Copyright © '}
       {new Date().getFullYear()}{' '}
       <MuiLink color="inherit" href={authorLink} target="_blank">
