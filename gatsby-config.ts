@@ -7,10 +7,10 @@ dotenv.config({
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `Frontend developer CV`,
+    title: `Developer Vladimir Polansky`,
     author: `Vladimir Polansky`,
     authorLink: `https://github.com/vovoka-path`,
-    description: `I'm frontend developer. Open to work!`,
+    description: `Download CV. Open to work! In 2022 developed over 10 web applications using React, Javascript, Typescript and Node.js.`,
     siteUrl: `https://vovoka.space/`,
     gitHubAppUrl: `https://github.com/vovoka-path/my-cv-page`,
     image: `src/images/logo/vovoka-path-512px.png`,
@@ -82,6 +82,22 @@ const config: GatsbyConfig = {
     },
     `gatsby-plugin-material-ui`,
     `gatsby-plugin-fix-fouc`,
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://vovoka.space',
+        sitemap: 'https://vovoka.space/sitemap-index.xml',
+        env: {
+          development: {
+            policy: [{ userAgent: '*', disallow: ['/'] }],
+          },
+          production: {
+            policy: [{ userAgent: '*', allow: '/' }],
+          },
+        },
+      },
+    },
   ],
 };
 
