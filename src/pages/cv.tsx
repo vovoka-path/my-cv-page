@@ -52,11 +52,11 @@ const CVPage: React.FC<PageProps> = () => {
       <Container maxWidth="lg">
         <Box sx={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: 2, my: 8 }}>
           <Button href={CVpdf} variant="contained" color="primary" startIcon={<SaveIcon />}>
-            Download CV
+            Download PDF
           </Button>
           <Link style={{ textDecoration: `none` }} to={'/cv-print'}>
             <Button variant="contained" color="primary" startIcon={<PrintIcon />}>
-              Print version
+              Page for print
             </Button>
           </Link>
         </Box>
