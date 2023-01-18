@@ -68,13 +68,21 @@ This web app is deployed on Gatsby Cloud via Github. I bought domain **[vovoka.s
 
 ***
 
-## :rocket: Optimization Score
+## :rocket: Optimization
 
 While I was developing it, I kept thinking about performance, accessibility, progressive web apps and SEO. I have set a goal to create a site according to modern web standards. 
 
 **Lighthouse report:**
 
 ![Lighthouse-report-CV](https://user-images.githubusercontent.com/76701292/213206805-f07993ef-e431-410d-a408-c8002e2a3924.png)
+
+***
+
+## :white_check_mark: Snippets
+
+![google-snippet](https://user-images.githubusercontent.com/76701292/213313212-0856e987-d68a-4794-a2ec-6ee0a13f3500.png)
+![fb-kinkedin-snippets](https://user-images.githubusercontent.com/76701292/213313267-4e355d62-9fe9-43a6-925a-d41d613024da.jpg)
+
 
 ***
 
