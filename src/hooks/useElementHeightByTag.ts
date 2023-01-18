@@ -1,9 +1,9 @@
-import React from 'react';
+import { useLayoutEffect, useState } from 'react';
 
 const useElementHeightByTag = (tag: string) => {
-  const [height, setHeight] = React.useState(0);
+  const [height, setHeight] = useState(0);
 
-  React.useLayoutEffect(() => {
+  useLayoutEffect(() => {
     const getHeight: ResizeObserverCallback = ([{ target: Elem }]) => {
       Elem && setHeight(Elem.clientHeight);
     };
