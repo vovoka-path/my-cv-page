@@ -1,11 +1,34 @@
 <h1 align="center">
-  My CV page
+  CV page
 </h1>
+<h3 align="center">Author <a href="https://github.com/vovoka-path">Vladimir Polansky</a></h3>
 
 ***
 
-<h3 align="center">Developer: <a href="https://vovoka.space/">Vladimir Polansky</a></h3>
-<p align="center">
+Recruiter, I appreciate your attention to me. I created [vovoka.space](https://vovoka.space/) for you. It's about me as a frontend developer. I hope I can go into more detail and save you some time.
+
+Here you will find my [CV](https://vovoka.space/cv) (+ [print](https://vovoka.space/cv-print)) and all my [contacts](https://vovoka.space/contacts).
+
+***
+
+### :key: Key features
+ - Website optimization for search engines (**SEO**)
+ - Rich **snippets** for social media using Open Graph
+ - Use **schema.org**
+ - The site is **adaptive** for any devices and screen sizes
+ - **Loading speed** acceleration.
+ - **PWA**
+
+***
+
+## :hammer: Stack
+
+1.  **React 18.2.0.**
+2.  **Gatsby 5.2.0. + GraphQL**
+3.  **Material UI 5.10.16.**
+4.  **Typescript 4.8.4.**
+
+<p align="left">
   <a href="https://reactjs.org/">
     <img alt="React" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" width="60" />
   </a>
@@ -24,46 +47,30 @@
 </p>
 
 ***
-Hi!
-
-I created this web app in search of a great company. I want to make money for you. Where are you, my best employer? My name is Vladimir. 
-
-***
-
-### :key: Key features:
- - Website optimization for search engines (**SEO**)
- - Rich **snippets** for social media using Open Graph
- - Set **schema.org**
- - The site is **adaptive** for any devices and screen sizes
- - **Loading speed** acceleration. Notice: site using Material UI!
- - **PWA**
-
-Make sure how the [site](https://vovoka.space/) works quickly. I guess you'll enjoy it. I bought a domain [vovoka.space](https://vovoka.space/) specifically for this project.
-
-## :hammer: Stack
-
-1.  **React 18.2.0.**
-2.  **Gatsby 5.2.0. + GraphQL**
-3.  **Material UI 5.10.16.**
-4.  **Typescript 4.8.4.**
 
 ## :wrench: Source code
 
-I created components that can be easily extended and reused. I used GraphQL requests, structured JSON data, CSS-in-JS, theming, custom hooks and HOC. I configured Eslint, Prettier, Typescript. [Source code](https://github.com/vovoka-path/my-cv-page/tree/main/src).
+[Source code](https://github.com/vovoka-path/my-cv-page/tree/main/src)
 
+Configured Typescript, Eslint, Prettier. Used theming, custom hooks, HOC, GraphQL requests, structured JSON data, CSS-in-JS. Components are easily extended and reused.
+
+***
 
 ## :globe_with_meridians: Deploy
 
-This app deployed on Gatsby Cloud via Github. I created **www.vovoka.space** and configured redirection to the main domain. Let’s Encrypt received. [Link](https://vovoka.space/).
 <p align="left">
   <a href="https://vovoka.space/">
     <img  alt="Deploy to Gatsby Cloud" src="https://www.gatsbyjs.com/deploynow.svg" width="160">
   </a>
 </p>
 
+This web app is deployed on Gatsby Cloud via Github. I bought domain **[vovoka.space](https://vovoka.space/)**. 
+
+***
+
 ## :rocket: Optimization Score
 
-I have set a goal to create a site according to modern web standards. While I was developing it, I kept thinking about performance, accessibility, progressive web apps and SEO. 
+While I was developing it, I kept thinking about performance, accessibility, progressive web apps and SEO. I have set a goal to create a site according to modern web standards. 
 
 **Lighthouse** report:
 
