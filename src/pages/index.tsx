@@ -13,7 +13,7 @@ import SEO from '../components/SEO';
 import IndexPageHeroBG from '../components/IndexPageHeroBG';
 import useSiteMetadata from '../hooks/useSiteMetadata';
 
-const title = 'About me';
+const title = 'About';
 
 const textStyles = {
   common: {
