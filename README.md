@@ -78,11 +78,20 @@ While I was developing it, I kept thinking about performance, accessibility, pro
 
 ***
 
+## :clipboard: Schema.org validate
+
+**Result:**
+
+![schema org-validate](https://user-images.githubusercontent.com/76701292/213314402-94ea25da-c921-49a3-a3e3-76f5a5c8c545.png)
+
+***
+
 ## :white_check_mark: Snippets
+
+**Checked on [metatags.io](https://metatags.io):**
 
 ![google-snippet](https://user-images.githubusercontent.com/76701292/213313212-0856e987-d68a-4794-a2ec-6ee0a13f3500.png)
 ![fb-kinkedin-snippets](https://user-images.githubusercontent.com/76701292/213313267-4e355d62-9fe9-43a6-925a-d41d613024da.jpg)
-
 
 ***
 
