@@ -11,7 +11,7 @@ Here you will find my [CV](https://vovoka.space/cv) (+ [print](https://vovoka.sp
 
 ***
 
-### :key: Key features
+## :key: Key features
  - Website optimization for search engines (**SEO**)
  - Rich **snippets** for social media using Open Graph
  - Use **schema.org**
@@ -72,9 +72,9 @@ This web app is deployed on Gatsby Cloud via Github. I bought domain **[vovoka.s
 
 While I was developing it, I kept thinking about performance, accessibility, progressive web apps and SEO. I have set a goal to create a site according to modern web standards. 
 
-**Lighthouse** report:
+**Lighthouse report:**
 
-![Lighthouse report screenshot (Desktop) vovoka.space](/src/static/2022-12-09_02_26_34-Frontend_developer_CV_%20About_me.png)
+![Lighthouse-report-CV](https://user-images.githubusercontent.com/76701292/213206805-f07993ef-e431-410d-a408-c8002e2a3924.png)
 
 ***
 
