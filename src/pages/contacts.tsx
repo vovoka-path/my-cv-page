@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { PageProps } from 'gatsby';
 import * as MUIcon from '@mui/icons-material';
+import { StaticImage } from 'gatsby-plugin-image';
 
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
@@ -67,6 +68,12 @@ const ContactsPage: React.FC<PageProps> = () => {
             ))}
           </Container>
         </Box>
+        <StaticImage
+          src="../images/open-to-work-snow-linkedin.jpg"
+          alt="Frontend developer: react, typescript, javascript, node.js. Open to work."
+          placeholder="none"
+          layout="constrained"
+        />
       </Container>
       <PagesBG />
     </Layout>
