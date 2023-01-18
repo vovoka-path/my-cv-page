@@ -16,7 +16,8 @@ Here you will find my [CV](https://vovoka.space/cv) (+ [print](https://vovoka.sp
  - Rich **snippets** for social media using Open Graph
  - Use **schema.org**
  - The site is **adaptive** for any devices and screen sizes
- - **Loading speed** acceleration.
+ - **Loading speed** acceleration
+ - Swiping humburger menu
  - **PWA**
 
 ***
@@ -75,6 +76,18 @@ While I was developing it, I kept thinking about performance, accessibility, pro
 **Lighthouse report:**
 
 ![Lighthouse-report-CV](https://user-images.githubusercontent.com/76701292/213206805-f07993ef-e431-410d-a408-c8002e2a3924.png)
+
+***
+
+## :computer: Adaptive
+
+**Screenshots 1:**
+
+![vovoka space-about](https://user-images.githubusercontent.com/76701292/213318638-c8cb2ed5-944e-4431-9d8d-f78d47cdc17c.jpg)
+
+**Screenshots 2:**
+
+![vovoka space-cv](https://user-images.githubusercontent.com/76701292/213318664-67699cd0-5fd5-46e1-bde4-d98186f0f605.jpg)
 
 ***
 
