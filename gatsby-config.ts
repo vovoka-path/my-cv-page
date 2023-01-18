@@ -13,7 +13,7 @@ const config: GatsbyConfig = {
     description: `React, Typescript, Node.js. CV, portfolio, contatcs. Get to know me!`,
     siteUrl: `https://vovoka.space/`,
     gitHubAppUrl: `https://github.com/vovoka-path/my-cv-page`,
-    image: `src/images/logo/vovoka-path-512px.png`,
+    image: `open-to-work-snow-linkedin.jpg`,
     social: [
       { name: `Linkedin`, link: `https://www.linkedin.com/in/areawed/` },
       { name: `Github`, link: `https://github.com/vovoka-path` },
@@ -64,7 +64,7 @@ const config: GatsbyConfig = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
-        path: './src/images/',
+        path: `./src/images/`,
       },
       __key: 'images',
     },
