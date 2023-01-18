@@ -17,7 +17,7 @@ Here you will find my [CV](https://vovoka.space/cv) (+ [print](https://vovoka.sp
  - Use **schema.org**
  - The site is **adaptive** for any devices and screen sizes
  - **Loading speed** acceleration
- - Swiping humburger menu
+ - Swiping hamburger menu
  - **PWA**
 
 ***
