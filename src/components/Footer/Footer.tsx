@@ -26,8 +26,6 @@ const Footer: React.FC = () => {
   const { author, authorLink, gitHubAppUrl } = useSiteMetadata();
   const authorNoWrap = author.split(' ').join(' ');
 
-  console.log('authorLink', authorLink);
-
   return (
     <footer>
       <Box
