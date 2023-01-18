@@ -7,10 +7,10 @@ dotenv.config({
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `Developer Vladimir Polansky`,
+    title: `Vladimir Polansky, frontend developer `,
     author: `Vladimir Polansky`,
     authorLink: `https://github.com/vovoka-path`,
-    description: `Download CV. Open to work! In 2022 developed over 10 web applications using React, Javascript, Typescript and Node.js.`,
+    description: `React, Typescript, Node.js. CV, portfolio, contatcs. Get to know me!`,
     siteUrl: `https://vovoka.space/`,
     gitHubAppUrl: `https://github.com/vovoka-path/my-cv-page`,
     image: `src/images/logo/vovoka-path-512px.png`,
