@@ -84,11 +84,12 @@ const IndexPage: React.FC<PageProps> = () => {
               My name is {author.split(' ')[0]}
             </Typography>
             <Typography variant="h3" sx={{ ...textStyles.common, ...textStyles.subTitle }}>
-              Frontend developer
+              Frontend/Backend developer
             </Typography>
             <Typography variant="body1" sx={{ ...textStyles.common, ...textStyles.text }}>
               Developed over 10 web applications in 2022 using React, Typescript/Javascript and
-              Node.js. Open to relocation or remote work.
+              Node.js. Familiar with e-commerce, travel, photography. Good communication skills to
+              articulate thoughts clearly.
             </Typography>
             <Box>
               <Link style={linkStyles} to={'/cv'}>
