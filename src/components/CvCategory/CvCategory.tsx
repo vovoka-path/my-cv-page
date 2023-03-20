@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTheme } from '@mui/material/styles';
+import { StaticImage } from 'gatsby-plugin-image';
 
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
@@ -21,16 +22,25 @@ const CvCategory: React.FC<CategoryCVProps> = ({ category }) => {
       borderTop={{ xs: lineStyle, sm: 'none' }}
       sx={{ display: 'flex', lineHeight: 1.2, textTransform: 'uppercase' }}
     >
-      <Typography
-        component="h3"
-        color={{
-          xs: theme.palette.secondary.contrastText,
-          sm: theme.palette.secondary.dark,
-        }}
-        sx={{ fontWeight: 600 }}
-      >
-        {category}
-      </Typography>
+      {category.includes('photo') ? (
+        <StaticImage
+          src="../../images/VP_transparent.png"
+          alt="Frontend developer photo"
+          placeholder="none"
+          layout="constrained"
+        />
+      ) : (
+        <Typography
+          component="h3"
+          color={{
+            xs: theme.palette.secondary.contrastText,
+            sm: theme.palette.secondary.dark,
+          }}
+          sx={{ fontWeight: 600 }}
+        >
+          {category}
+        </Typography>
+      )}
     </Box>
   );
 };

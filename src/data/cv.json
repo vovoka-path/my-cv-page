@@ -1,10 +1,10 @@
 [
   {
-    "category": "Name",
+    "category": "",
     "items": [
       {
-        "title": "Vladimir Polansky",
-        "subtitle": "Frontend Developer",
+        "title": "Frontend/Backend Developer",
+        "subtitle": "Vladimir Polansky",
         "date": "",
         "description": "",
         "description_link": ""
@@ -12,7 +12,7 @@
       {
         "title": "",
         "title_link": "",
-        "subtitle": "Minsk, remote, relocate",
+        "subtitle": "Minsk, remote",
         "date": "",
         "description": "",
         "description_link": ""
@@ -20,28 +20,14 @@
     ]
   },
   {
-    "category": "Contacts",
+    "category": " photo",
     "items": [
-      {
-        "title": "",
-        "subtitle": "",
-        "date": "",
-        "description": "vovoka.space",
-        "description_link": "https://vovoka.space"
-      },
       {
         "title": "",
         "subtitle": "",
         "date": "",
         "description": "vovoka.path@gmail.com",
         "description_link": "mailto:vovoka.path@gmail.com"
-      },
-      {
-        "title": "",
-        "subtitle": "",
-        "date": "",
-        "description": "github.com/vovoka-path",
-        "description_link": "https://github.com/vovoka-path"
       },
       {
         "title": "",
@@ -56,6 +42,20 @@
         "date": "",
         "description": "linkedin.com/in/areawed",
         "description_link": "https://linkedin.com/in/areawed"
+      },
+      {
+        "title": "",
+        "subtitle": "",
+        "date": "",
+        "description": "github.com/vovoka-path",
+        "description_link": "https://github.com/vovoka-path"
+      },
+      {
+        "title": "",
+        "subtitle": "",
+        "date": "",
+        "description": "vovoka.space",
+        "description_link": "https://vovoka.space"
       }
     ]
   },
@@ -63,7 +63,14 @@
     "category": "Skills",
     "items": [
       {
-        "title": "React, Gatsby",
+        "title": "React, Mobx, Gatsby",
+        "subtitle": "",
+        "date": "",
+        "description": "",
+        "description_link": ""
+      },
+      {
+        "title": "NodeJS, Express",
         "subtitle": "",
         "date": "",
         "description": "",
@@ -77,21 +84,14 @@
         "description_link": ""
       },
       {
-        "title": "HTML5, (S)CSS, Material UI",
+        "title": "MongoDB, mySQL, GraphQL",
         "subtitle": "",
         "date": "",
         "description": "",
         "description_link": ""
       },
       {
-        "title": "Node, Express",
-        "subtitle": "",
-        "date": "",
-        "description": "",
-        "description_link": ""
-      },
-      {
-        "title": "MongoDB, GraphQL, mySQL",
+        "title": "HTML5, SCSS, Material UI",
         "subtitle": "",
         "date": "",
         "description": "",
@@ -105,21 +105,21 @@
         "description_link": ""
       },
       {
-        "title": "Git, Webpack",
+        "title": "Git, Webpack, Eslint, Prettier",
         "subtitle": "",
         "date": "",
         "description": "",
         "description_link": ""
       },
       {
-        "title": "Best practices, MVC, OOP",
+        "title": "OOP, FP, patterns",
         "subtitle": "",
         "date": "",
         "description": "",
         "description_link": ""
       },
       {
-        "title": "Understanding of UI/UX",
+        "title": "Understanding of UI/UX, SEO",
         "subtitle": "",
         "date": "",
         "description": "",
@@ -127,23 +127,34 @@
       }
     ]
   },
-
   {
     "category": "Experience",
     "items": [
       {
-        "title": "Frontend Developer",
-        "subtitle": "React, Typescript, Javascript, Node, HTML, CSS",
-        "date": "dec 2021 - nov 2022",
-        "description": "Developed over 10 web apps under the multilevel frontend training program of RSS (30-40 hours of practice per week during ~1 year) and several pet projects. Team leader experience.",
+        "title": "Frontend/Backend Developer",
+        "subtitle": "TS/JS, React/Mobx/Gatsby, NodeJS/Express, HTML/CSS",
+        "date": "dec 2021 - now",
+        "description": "Developed over 10 web apps under the multilevel frontend training program of RSS (30-40 hours of practice per week during 1 year). Created several pet projects. Got team leader experience. Started the course «AWS Fundamentals».",
         "description_link": ""
       },
       {
-        "title": "Wedding/portrait photographer",
+        "title": "Photographer manager",
         "subtitle": "Wordpress, HTML, CSS, Javascript, PHP, mySQL",
         "date": "2011 - 2020",
-        "description": "Сreated over 10 websites using Wordpress. Dealt with SEO, UX/UI, product strategy, customer journey, SMM, marketing, sales, Google ads, and communication with foreigners.",
+        "description": "Created 8 websites using Wordpress. Promoted 2 sites to the top search. Dealt with SEO, UX/UI, SMM, product strategy, customer journey, marketing, sales, Google ads, and communication with foreigners.",
         "description_link": ""
+      }
+    ]
+  },
+  {
+    "category": "Projects",
+    "items": [
+      {
+        "title": "",
+        "subtitle": "",
+        "date": "",
+        "description": "Described in depth on my GitHub. Please follow this link to see.",
+        "description_link": "https://github.com/vovoka-path"
       }
     ]
   },
@@ -151,29 +162,35 @@
     "category": "Education",
     "items": [
       {
-        "title": "The Rolling Scopes School",
-        "subtitle": "Frontend Developer",
-        "date": "dec 2021 - nov 2022",
-        "description": "Four Frontend courses: «Preschool», «Stage #1», «Stage #2», «React»",
+        "title": "Backend AWS Developer",
+        "subtitle": "The Rolling Scopes School",
+        "date": "march 2023 - now",
+        "description": "Studying the course «AWS Fundamentals».",
         "description_link": ""
       },
       {
-        "title": "Mentor Zar Zakharov",
-        "subtitle": "Frontend Developer",
+        "title": "Frontend Developer",
+        "subtitle": "Mentoring by Zar Zakharov",
         "date": "apr 2022 - aug 2022",
-        "description": "Complete React Developer Course (it-course.online)",
+        "description": "Completed the course 'Complete React Developer' with mentor feedback. Participated in 20 extra workshops.",
         "description_link": ""
       },
       {
-        "title": "Belarusian State Agrarian Technical University",
-        "subtitle": "Electrical Engineer",
+        "title": "JS/TS Frontend Developer",
+        "subtitle": "The Rolling Scopes School",
+        "date": "dec 2021 - sept 2022",
+        "description": "Successfully completed a full cycle of 3 courses «Frontend/JS», which lasted 9 months: «Preschool», «Stage #1», «Stage #2». Self-development accounted for 70%.",
+        "description_link": ""
+      },
+      {
+        "title": "Electrical Engineer",
+        "subtitle": "Belarusian State Agrarian Technical University",
         "date": "1993 - 1998",
         "description": "",
         "description_link": ""
       }
     ]
   },
-
   {
     "category": "Languages",
     "items": [
@@ -181,7 +198,7 @@
         "title": "English ",
         "subtitle": "Intermediate (B1)",
         "date": "",
-        "description": "Keep improving everyday",
+        "description": "",
         "description_link": ""
       },
       {
@@ -200,14 +217,14 @@
       "title": "",
       "subtitle": "",
       "date": "",
-      "description": "Experienced in e-commerce. Good communication skills to articulate thoughts clearly. Delivered results within project's resources and time constraints. Happy to meet new people. Visited 14 countries.",
+      "description": "Experienced in building communication in the development team - under my leadership on Agile methodology in a limited time has been developed fullstack-application «CRM for photo agency». Familiar with e-commerce. Was developing a little on C#/.NET, PHP, Python.",
       "description_link": ""
       },
       {
         "title": " ",
         "subtitle": "",
         "date": "",
-        "description": "When things get tough, I don't give up. I'll go find out if I don't know something. If someone asks, I'll gladly share my knowledge.",
+        "description": "Happy to meet new people and learn new things. Visited 14 countries. Curious, proactive - when I don’t know, I find a solution. Open, ready to share my knowledge. Good communication skills to articulate thoughts clearly.",
         "description_link": ""
       }
     ]
@@ -217,35 +234,14 @@
     "items": [
       {
         "title": "",
-        "subtitle": "Creating apps",
+        "subtitle": "",
         "date": "",
-        "description": "",
+        "description": "Psychology, programming, guitar playing, board games, basketball.",
         "description_link": ""
       },
       {
         "title": "",
-        "subtitle": "Travel, photography",
-        "date": "",
-        "description": "",
-        "description_link": ""
-      },
-      {
-        "title": "",
-        "subtitle": "Basketball, tennis",
-        "date": "",
-        "description": "",
-        "description_link": ""
-      },
-      {
-      "title": "",
-      "subtitle": "Play guitar, board games",
-      "date": "",
-      "description": "",
-      "description_link": ""
-      },
-      {
-        "title": "",
-        "subtitle": "Psychology, history",
+        "subtitle": "",
         "date": "",
         "description": "",
         "description_link": ""
