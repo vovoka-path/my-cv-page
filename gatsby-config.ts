@@ -29,7 +29,19 @@ const config: GatsbyConfig = {
   graphqlTypegen: true,
   plugins: [
     'gatsby-plugin-image',
-    'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-plugin-sharp',
+      options: {
+        defaults: {
+          formats: ['auto', 'webp'],
+          quality: 100,
+          jpgOptions: { quality: 100, progressive: true },
+          pngOptions: { quality: 100, compressionSpeed: 10 },
+          webpOptions: { quality: 100 },
+        },
+        defaultQuality: 100,
+      },
+    },
     'gatsby-transformer-sharp',
     {
       resolve: `gatsby-plugin-manifest`,
