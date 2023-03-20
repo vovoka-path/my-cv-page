@@ -17,6 +17,7 @@ import { ItemCVProps } from '../types/types';
 import SEO from '../components/SEO';
 // import PageTitle from '../../components/PageTitle';
 import useSiteMetadata from '../hooks/useSiteMetadata';
+import ImgPhoto from '../components/ImgPhoto';
 
 const title = '(CV на одном листе)';
 
@@ -101,12 +102,7 @@ const CVPrint = () => {
                       sx={{ display: 'flex', lineHeight: 1.2, textTransform: 'uppercase' }}
                     >
                       {categoryData.node.category.includes('photo') ? (
-                        <StaticImage
-                          src="../images/VP_transparent.png"
-                          alt="Frontend developer photo"
-                          placeholder="none"
-                          layout="constrained"
-                        />
+                        <ImgPhoto />
                       ) : (
                         <Typography
                           component="h3"

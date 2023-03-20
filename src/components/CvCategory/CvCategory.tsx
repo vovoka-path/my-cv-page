@@ -1,11 +1,12 @@
 import React from 'react';
 import { useTheme } from '@mui/material/styles';
-import { StaticImage } from 'gatsby-plugin-image';
+// import { StaticImage } from 'gatsby-plugin-image';
 
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 
 import { CategoryCVProps } from '../../types/types';
+import ImgPhoto from '../ImgPhoto';
 
 const lineStyle = '1px dotted';
 
@@ -23,12 +24,7 @@ const CvCategory: React.FC<CategoryCVProps> = ({ category }) => {
       sx={{ display: 'flex', lineHeight: 1.2, textTransform: 'uppercase' }}
     >
       {category.includes('photo') ? (
-        <StaticImage
-          src="../../images/VP_transparent.png"
-          alt="Frontend developer photo"
-          placeholder="none"
-          layout="constrained"
-        />
+        <ImgPhoto />
       ) : (
         <Typography
           component="h3"
