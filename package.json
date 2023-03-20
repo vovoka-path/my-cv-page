@@ -27,7 +27,7 @@
     "@fontsource/montserrat": "^4.5.13",
     "@mui/icons-material": "^5.10.14",
     "@mui/material": "^5.10.16",
-    "gatsby": "^5.0.1",
+    "gatsby": "~5.0.1",
     "gatsby-plugin-fix-fouc": "^1.0.0",
     "gatsby-plugin-html-attributes": "^1.0.5",
     "gatsby-plugin-image": "^3.0.0",
