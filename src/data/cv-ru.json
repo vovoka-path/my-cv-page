@@ -1,0 +1,253 @@
+[
+  {
+    "category": "",
+    "items": [
+      {
+        "title": "Frontend/Backend разработчик",
+        "subtitle": "Владимир Полянский",
+        "date": "",
+        "description": "",
+        "description_link": ""
+      },
+      {
+        "title": "",
+        "title_link": "",
+        "subtitle": "Минск, удаленно",
+        "date": "",
+        "description": "",
+        "description_link": ""
+      }
+    ]
+  },
+  {
+    "category": " photo",
+    "items": [
+      {
+        "title": "",
+        "subtitle": "",
+        "date": "",
+        "description": "vovoka.path@gmail.com",
+        "description_link": "mailto:vovoka.path@gmail.com"
+      },
+      {
+        "title": "",
+        "subtitle": "",
+        "date": "",
+        "description": "t.me/vovoka",
+        "description_link": "https://t.me/vovoka"
+      },
+      {
+        "title": "",
+        "subtitle": "",
+        "date": "",
+        "description": "linkedin.com/in/areawed",
+        "description_link": "https://linkedin.com/in/areawed"
+      },
+      {
+        "title": "",
+        "subtitle": "",
+        "date": "",
+        "description": "github.com/vovoka-path",
+        "description_link": "https://github.com/vovoka-path"
+      },
+      {
+        "title": "",
+        "subtitle": "",
+        "date": "",
+        "description": "vovoka.space",
+        "description_link": "https://vovoka.space"
+      }
+    ]
+  },
+  {
+    "category": "Навыки",
+    "items": [
+      {
+        "title": "React, Mobx, Gatsby",
+        "subtitle": "",
+        "date": "",
+        "description": "",
+        "description_link": ""
+      },
+      {
+        "title": "NodeJS, Express",
+        "subtitle": "",
+        "date": "",
+        "description": "",
+        "description_link": ""
+      },
+      {
+        "title": "Typescript, Javascript",
+        "subtitle": "",
+        "date": "",
+        "description": "",
+        "description_link": ""
+      },
+      {
+        "title": "MongoDB, mySQL, GraphQL",
+        "subtitle": "",
+        "date": "",
+        "description": "",
+        "description_link": ""
+      },
+      {
+        "title": "HTML5, SCSS, Material UI",
+        "subtitle": "",
+        "date": "",
+        "description": "",
+        "description_link": ""
+      },
+      {
+        "title": "Testing Library, Jest",
+        "subtitle": "",
+        "date": "",
+        "description": "",
+        "description_link": ""
+      },
+      {
+        "title": "Git, Webpack, Eslint, Prettier",
+        "subtitle": "",
+        "date": "",
+        "description": "",
+        "description_link": ""
+      },
+      {
+        "title": "OOP, FP, patterns",
+        "subtitle": "",
+        "date": "",
+        "description": "",
+        "description_link": ""
+      },
+      {
+        "title": "Understanding of UI/UX, SEO",
+        "subtitle": "",
+        "date": "",
+        "description": "",
+        "description_link": ""
+      }
+    ]
+  },
+
+  {
+    "category": "Опыт",
+    "items": [
+      {
+        "title": "Frontend/Backend разработчик",
+        "subtitle": "TS/JS, React/Mobx/Gatsby, NodeJS/Express, HTML/CSS",
+        "date": "дек 2021 - сейчас",
+        "description": "Создал более 10-ти web-приложений в рамках пройденых курсов. Реализовал несколько собственных проектов. Занимался активной разработкой 40 часов в неделю в течение года, получил опыт тимлида. Сейчас изучаю курс «AWS Fundamentals».",
+        "description_link": ""
+      },
+      {
+        "title": "Менеджер фотографа",
+        "subtitle": "Wordpress, HTML, CSS, Javascript, PHP, mySQL",
+        "date": "2011 - 2020",
+        "description": "Создал 8 сайтов в Wordpress. Продвинул 2 сайта в топ поиска. Занимался UX/UI, копирайтингом, SMM, SEO, маркетингом, Google ads.",
+        "description_link": ""
+      }
+    ]
+  },
+  {
+    "category": "Проекты",
+    "items": [
+      {
+        "title": "",
+        "subtitle": "",
+        "date": "",
+        "description": "Подробно описаны на главной странице моего GitHub-профиля",
+        "description_link": "https://github.com/vovoka-path"
+      }
+    ]
+  },
+  {
+    "category": "Образование",
+    "items": [
+      {
+        "title": "Backend AWS Developer",
+        "subtitle": "The Rolling Scopes School",
+        "date": "март 2023 - сейчас",
+        "description": "Изучаю курс «AWS Fundamentals».",
+        "description_link": ""
+      },
+      {
+        "title": "React Frontend разработчик",
+        "subtitle": "Обучение у ментора Зара Захарова",
+        "date": "апр 2022 - авг 2022",
+        "description": "Закончил курс 'Complete React Developer' с обратной связью от ментора. Дополнительно участвовал в 20-ти воркшопах.",
+        "description_link": ""
+      },
+      {
+        "title": "JS/TS Frontend разработчик",
+        "subtitle": "The Rolling Scopes School",
+        "date": "дек 2021 - сент 2022",
+        "description": "Успешно закончил полный цикл из 3-х курсов «Frontend/JS», который длился 9 месяцев: «Preschool», «Stage #1», «Stage #2». Самостоятельная разработка занимала 70%.",
+        "description_link": ""
+      },
+      {
+        "title": "Инженер-электрик",
+        "subtitle": "Белорусский аграрно-технический университет",
+        "date": "1993 - 1998",
+        "description": "Создал рок-группу, был капитаном команды «Брейн-ринг».",
+        "description_link": ""
+      }
+    ]
+  },
+
+  {
+    "category": "Языки",
+    "items": [
+      {
+        "title": "Английский ",
+        "subtitle": "Intermediate (B1)",
+        "date": "",
+        "description": "",
+        "description_link": ""
+      },
+      {
+        "title": "Русский, белорусский",
+        "subtitle": "Родной",
+        "date": "",
+        "description": "",
+        "description_link": ""
+      }
+    ]
+  },
+  {
+    "category": "Обо мне",
+    "items": [
+      {
+        "title": "",
+        "subtitle": "",
+        "date": "",
+        "description": "Есть опыт построения коммуникации в команде разработчиков - под моим управлением по методологии Agile в ограниченный срок было разработано fullstack-приложение «CRM для фотоагенства». Умею создавать и проводить презентации. Есть практика разработки на C#/.NET. Знаком c PHP, Python. Имею знания в домене e-commerce.",
+        "description_link": ""
+      },
+      {
+        "title": " ",
+        "subtitle": "",
+        "date": "",
+        "description": "С удовольствием знакомлюсь с новыми людьми и изучаю новые вещи. Посетил 14 стран. Любопытен, инициативен - когда не знаю, нахожу решение. Открыт, легко делюсь знаниями с другими.",
+        "description_link": ""
+      }
+    ]
+  },
+  {
+    "category": "Интересы",
+    "items": [
+      {
+        "title": "",
+        "subtitle": "",
+        "date": "",
+        "description": "Психология, программирование, игра на гитаре, настольные игры, баскетбол.",
+        "description_link": ""
+      },
+      {
+        "title": "",
+        "subtitle": "",
+        "date": "",
+        "description": "",
+        "description_link": ""
+      }
+    ]
+  }
+]
