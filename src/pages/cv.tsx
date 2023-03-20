@@ -63,27 +63,25 @@ const CVPage: React.FC<PageProps> = () => {
         <Box my={6}>
           {dataByCategory.map((categoryData, indexCategory) => {
             return (
-              <>
+              <Box
+                key={`boxCV-${indexCategory}`}
+                pb={4}
+                sx={{ display: 'flex', flexDirection: { xs: 'column', sm: 'row' } }}
+              >
+                <CvCategory category={categoryData.node.category} id={indexCategory} />
                 <Box
-                  key={`boxCV-${indexCategory}`}
-                  pb={4}
-                  sx={{ display: 'flex', flexDirection: { xs: 'column', sm: 'row' } }}
+                  pt={{ xs: 2, sm: 0 }}
+                  px={{ xs: 0, sm: 4 }}
+                  sx={{ width: { xs: '100%', sm: '70%' } }}
                 >
-                  <CvCategory category={categoryData.node.category} id={indexCategory} />
-                  <Box
-                    pt={{ xs: 2, sm: 0 }}
-                    px={{ xs: 0, sm: 4 }}
-                    sx={{ width: { xs: '100%', sm: '70%' } }}
-                  >
-                    {categoryData.node.items.map((cvItem, indexItem) => (
-                      <CvItem
-                        key={`itemCV-${indexCategory}-${indexItem}`}
-                        {...{ ...cvItem, id: indexItem }}
-                      />
-                    ))}
-                  </Box>
+                  {categoryData.node.items.map((cvItem, indexItem) => (
+                    <CvItem
+                      key={`itemCV-${indexCategory}-${indexItem}`}
+                      {...{ ...cvItem, id: indexItem }}
+                    />
+                  ))}
                 </Box>
-              </>
+              </Box>
             );
           })}
         </Box>
