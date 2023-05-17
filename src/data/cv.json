@@ -132,16 +132,16 @@
     "items": [
       {
         "title": "Frontend/Backend Developer",
-        "subtitle": "TS/JS, React/Mobx/Gatsby, NodeJS/Express, HTML/CSS",
+        "subtitle": "TS/JS, React/Gatsby/Mobx, NodeJS/Express, HTML/CSS",
         "date": "dec 2021 - now",
-        "description": "Developed over 10 web apps under the multilevel frontend training program of RSS (30-40 hours of practice per week during 1 year). Created several pet projects. Got team leader experience. Started the course «AWS Fundamentals».",
+        "description": "Created CRM system for CYP agency. Got team leader experience. Developed over 10 web apps under the multilevel frontend training program of RSS (30-40 hours of practice per week during 1 year). Created several pet projects.",
         "description_link": ""
       },
       {
-        "title": "Photographer manager",
-        "subtitle": "Wordpress, HTML, CSS, Javascript, PHP, mySQL",
-        "date": "2011 - 2020",
-        "description": "Created 8 websites using Wordpress. Promoted 2 sites to the top search. Dealt with SEO, UX/UI, SMM, product strategy, customer journey, marketing, sales, Google ads, and communication with foreigners.",
+        "title": "Wordpress Developer",
+        "subtitle": "Wordpress, HTML, CSS, Javascript, PHP, mySQL, C#, SEO",
+        "date": "apr 2016 - now",
+        "description": "Created, edited and maintained several websites using Wordpress. Promoted 2 sites to the top search of Google and Yandex. Reached website Conversion Rate up to 7%. Webhooks are implemented in forms for communication with Telegram. Migrated MySQL DB. Dealt with SEO, UX/UI, SMM, product strategy, customer journey, marketing, sales, Google ads, and communication with consumers.",
         "description_link": ""
       }
     ]
@@ -161,13 +161,6 @@
   {
     "category": "Education",
     "items": [
-      {
-        "title": "Backend AWS Developer",
-        "subtitle": "The Rolling Scopes School",
-        "date": "march 2023 - now",
-        "description": "Studying the course «AWS Fundamentals».",
-        "description_link": ""
-      },
       {
         "title": "Frontend Developer",
         "subtitle": "Mentoring by Zar Zakharov",
