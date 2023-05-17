@@ -1,6 +1,6 @@
 import React from 'react';
-import '@fontsource/montserrat/latin.css';
-import '@fontsource/dancing-script/latin.css';
+// import '@fontsource/montserrat/latin.css';
+// import '@fontsource/dancing-script/latin.css';
 
 import { StyledEngineProvider, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
