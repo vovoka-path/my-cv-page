@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import '@fontsource/montserrat/latin.css';
-import '@fontsource/montserrat/cyrillic.css';
-import '@fontsource/dancing-script/latin.css';
+// import '@fontsource/montserrat/latin.css';
+// import '@fontsource/montserrat/cyrillic.css';
+// import '@fontsource/dancing-script/latin.css';
 import { StaticImage } from 'gatsby-plugin-image';
 
 import { StyledEngineProvider, ThemeProvider } from '@mui/material/styles';
