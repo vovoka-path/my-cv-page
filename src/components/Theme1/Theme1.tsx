@@ -1,4 +1,6 @@
 import { createTheme } from '@mui/material/styles';
+import '@fontsource/dancing-script';
+import '@fontsource/montserrat';
 
 const Theme1 = createTheme({
   palette: {
