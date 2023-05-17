@@ -87,9 +87,9 @@ const IndexPage: React.FC<PageProps> = () => {
               Frontend/Backend developer
             </Typography>
             <Typography variant="body1" sx={{ ...textStyles.common, ...textStyles.text }}>
-              Developed over 10 web applications in 2022 using React, Typescript/Javascript and
-              Node.js. Familiar with e-commerce, travel, photography. Good communication skills to
-              articulate thoughts clearly.
+              Developed over 10 web applications in 2021-2023 using React, Typescript/Javascript and
+              Node.js. Familiar with e-commerce, travel, photography domens. Experienced in
+              Wordpress development for 7 years.
             </Typography>
             <Box>
               <Link style={linkStyles} to={'/cv'}>
